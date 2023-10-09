@@ -122,3 +122,33 @@
 }
 
 /* --------------------------------------  Banner  --------------------------- */
+.banner{
+    padding-top: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.bannercontents{
+    color: #412433;
+    font-weight: bold;
+    font-size: 3.5rem;
+    font-family: "WorkSans","SansSerif";
+}
+.Simple{
+    color: #df0070;
+    font-weight: bold;
+    font-size: 3.5rem;
+    font-family: "WorkSans","SansSerif";
+}
+.subtitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 20%;
+    color: #412433;
+    font-size: 1.8rem;
+    font-family: "SourceSansPro","SansSerif";
+}
+
