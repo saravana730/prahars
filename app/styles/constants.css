@@ -1,17 +1,21 @@
 
-
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
 :root{
-    --primary-color: #FF04B9;
-    --secondary-color:#F5F5F5;
+    --primary-color:#df0070;
+    --secondary-color: #FF04B9;
+    --font-nav-color:#2c2c2c;
     --white-color:#ffffff;
+    --nav-background-color:#f9f9f9;
 
 
     /* font-size */
-    --font-navbar:24px;
+    --font-navbar:20px;
+    --font-contact:24px;
 
     /* font-weight */
-    --font-weight-navbar:700
+    --font-weight-navbar:600;
 
     /* font-family */
     --primary-font:'Source Sans Pro',sans-serif;
+
 }
