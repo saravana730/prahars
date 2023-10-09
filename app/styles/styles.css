@@ -1,0 +1,20 @@
+ @import url(constants.css);
+
+/* -------------------------------- Navbar ----------------------------------- */
+.navbar{
+    position: fixed;
+    top:0;
+    width:100%;
+}
+.navbarItemsBox{
+    width: 1072px;
+    height:120px;
+    border: 1px solid var(--primary-color);
+    background:var(--secondary-color);
+    display:flex;
+    align-items: center;
+    
+    padding-left: 2%;
+    padding-right:2%;
+    border-radius:30px ;
+}
