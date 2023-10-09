@@ -1,10 +1,23 @@
  @import url(constants.css);
 
+
+/* ---------------------------- Landing Page -------------------------------- */
+ .LandingPage{
+    width:100%;
+    min-height: 100%;
+    font-family: var(--primary-font);
+  }
+
 /* -------------------------------- Navbar ----------------------------------- */
 .navbar{
     position: fixed;
     top:0;
     width:100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2%;
+    padding-right:2%;
 }
 .navbarItemsBox{
     width: 1072px;
@@ -13,8 +26,24 @@
     background:var(--secondary-color);
     display:flex;
     align-items: center;
-    
+    justify-content: space-between;
     padding-left: 2%;
     padding-right:2%;
     border-radius:30px ;
 }
+.contactButton{
+    border:1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color:var(--white-color);
+    padding:0.25rem 1rem;
+    border-radius: 40px;;
+    font-size: var(--font-navbar);
+    font-weight: var(--font-weight-navbar);
+}
+.navbarItems{
+    font-size: var(--font-navbar);
+    font-weight: var(--font-weight-navbar);
+}
+
+
+/* --------------------------------------  Banner  --------------------------- */
