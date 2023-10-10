@@ -33,7 +33,7 @@ export default function Blogs() {
                                             </div>
                                         </div>
                                     </button>
-                                    <div className="blog_empty_box"></div>
+                                    {/* <div className="blog_empty_box"></div>
                                     <div className="flex flex-row justify-between">
                                        <div className="flex flex-row md:gap-2">
                                         <div className="blog_footer_img_calendar"></div>
@@ -47,7 +47,7 @@ export default function Blogs() {
                                         <div className="blog_footer_img_profile"></div>
                                         <div className="blog_footer_txt">Prahars</div>
                                        </div>
-                                    </div>
+                                    </div> */}
                                 </div>
 
 
@@ -70,7 +70,7 @@ export default function Blogs() {
                                             </div>
                                         </div>
                                     </button>
-                                    <div className="blog_empty_box"></div>
+                                    {/* <div className="blog_empty_box"></div>
                                     <div className="flex flex-row justify-between">
                                        <div className="flex flex-row md:gap-2">
                                         <div className="blog_footer_img_calendar"></div>
@@ -84,7 +84,7 @@ export default function Blogs() {
                                         <div className="blog_footer_img_profile"></div>
                                         <div className="blog_footer_txt">Prahars</div>
                                        </div>
-                                    </div>
+                                    </div> */}
                                 </div>
                             </div>
                         </div>
