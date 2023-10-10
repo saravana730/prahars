@@ -8,6 +8,7 @@ import CaseStudies from './components/casestudies';
 import Services from './components/services';
 import Clients from './components/clients';
 import Footer from './components/footer';
+import Blogs from './components/blog';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -34,6 +35,9 @@ export default function RootLayout({
         </div>
         <div>
           <Clients />
+        </div>
+        <div>
+          <Blogs />
         </div>
         <Footer />
         {children}</body>

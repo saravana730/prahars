@@ -17,10 +17,12 @@ export default function Services(){
                 <div className="flex flex-row justify-between">
                     <div className="flex flex-col   ">
                         <div className="our_services">OUR SERVICES</div>
-                        <div className="empty_box"></div>
-                        <div className="for_us">For us, this is</div>
-                        <div className="for_us">all in <span style={{color:"#df0070"}}>a day's</span></div>
-                        <div className="for_us"><span style={{color:"#df0070"}}>work.</span></div>
+                        {/* <div className="empty_box"></div> */}
+                        <div className="for_us_padding">
+                            <div className="for_us">For us, this is</div>
+                            <div className="for_us">all in <span style={{color:"#df0070"}}>a day's</span></div>
+                            <div className="for_us"><span style={{color:"#df0070"}}>work.</span></div>
+                        </div>
                         <div className="empty_box"></div>
                         <div>
                             <button className="outlined-button">
@@ -31,78 +33,82 @@ export default function Services(){
                             </button>
                         </div>
                     </div>
-                    <div className="flex flex-col">
-                        <div><Image src={sample_img_1} alt={"png"} width={50} height={50}/></div>
-                        <div className="branding_title">Branding</div>
-                        <div className="flex flex-row md: gap-4">
-                            {/* <div>Hello</div> */}
-                            <div><span className="branding_content_plus">+</span></div>
-                            <div className="branding_content">Market Research</div>
-                        </div>
-                        <div className="flex flex-row md: gap-4">
-                            {/* <div>Hello</div> */}
-                            <div><span className="branding_content_plus">+</span></div>
-                            <div className="branding_content">Brand Positioning</div>
-                        </div>
-                        <div className="flex flex-row md: gap-4">
-                            {/* <div>Hello</div> */}
-                            <div><span className="branding_content_plus">+</span></div>
-                            <div className="branding_content">Brand Identity Design</div>
-                        </div>
-                        <div className="flex flex-row md: gap-4">
-                            {/* <div>Hello</div> */}
-                            <div><span className="branding_content_plus">+</span></div>
-                            <div className="branding_content">Brand Collateral Design</div>
-                        </div>
-                        <div className="flex flex-row md: gap-4">
-                            {/* <div>Hello</div> */}
-                            <div><span className="branding_content_plus">+</span></div>
-                            <div className="branding_content">Branding for Startups</div>
-                        </div>
-                        <div className="flex flex-row md: gap-4">
-                            {/* <div>Hello</div> */}
-                            <div><span className="branding_content_plus">+</span></div>
-                            <div className="branding_content">Corporate Branding</div>
-                        </div>
-                        <div className="flex flex-row md: gap-4">
-                            {/* <div>Hello</div> */}
-                            <div><span className="branding_content_plus">+</span></div>
-                            <div className="branding_content">Product Branding</div>
+                    <div className="branding_padding">
+                        <div className="flex flex-col">
+                            <div><Image src={sample_img_1} alt={"png"} width={50} height={50}/></div>
+                            <div className="branding_title">Branding</div>
+                            <div className="flex flex-row md: gap-4">
+                                {/* <div>Hello</div> */}
+                                <div><span className="branding_content_plus">+</span></div>
+                                <div className="branding_content">Market Research</div>
+                            </div>
+                            <div className="flex flex-row md: gap-4">
+                                {/* <div>Hello</div> */}
+                                <div><span className="branding_content_plus">+</span></div>
+                                <div className="branding_content">Brand Positioning</div>
+                            </div>
+                            <div className="flex flex-row md: gap-4">
+                                {/* <div>Hello</div> */}
+                                <div><span className="branding_content_plus">+</span></div>
+                                <div className="branding_content">Brand Identity Design</div>
+                            </div>
+                            <div className="flex flex-row md: gap-4">
+                                {/* <div>Hello</div> */}
+                                <div><span className="branding_content_plus">+</span></div>
+                                <div className="branding_content">Brand Collateral Design</div>
+                            </div>
+                            <div className="flex flex-row md: gap-4">
+                                {/* <div>Hello</div> */}
+                                <div><span className="branding_content_plus">+</span></div>
+                                <div className="branding_content">Branding for Startups</div>
+                            </div>
+                            <div className="flex flex-row md: gap-4">
+                                {/* <div>Hello</div> */}
+                                <div><span className="branding_content_plus">+</span></div>
+                                <div className="branding_content">Corporate Branding</div>
+                            </div>
+                            <div className="flex flex-row md: gap-4">
+                                {/* <div>Hello</div> */}
+                                <div><span className="branding_content_plus">+</span></div>
+                                <div className="branding_content">Product Branding</div>
+                            </div>
                         </div>
                     </div>
-                    <div className="flex flex-col">
-                        <div>
-                            <Image src={sample_img_2} alt={"png"} width={50} height={50}/>
-                        </div>
-                        <div className="branding_title">Advertising and Marketing</div>
-                        <div className="flex flex-row md: gap-4">
-                            {/* <div>Hello</div> */}
-                            <div><span className="branding_content_plus">+</span></div>
-                            <div className="branding_content">Performance Marketing</div>
-                        </div>
-                        <div className="flex flex-row md: gap-4">
-                            {/* <div>Hello</div> */}
-                            <div><span className="branding_content_plus">+</span></div>                            <div className="branding_content">Digital Marketing</div>
-                        </div>
-                        <div className="flex flex-row md: gap-4">
-                            {/* <div>Hello</div> */}
-                            <div><span className="branding_content_plus">+</span></div>                            <div className="branding_content">LinkedIn Marketing</div>
-                        </div>
-                        <div className="flex flex-row md: gap-4">
-                            {/* <div>Hello</div> */}
-                            <div><span className="branding_content_plus">+</span></div>                            <div className="branding_content">Meta Marketing</div>
-                        </div>
-                        <div className="flex flex-row md: gap-4">
-                            {/* <div>Hello</div> */}
-                            <div><span className="branding_content_plus">+</span></div>                            <div className="branding_content">Google Ads</div>
-                        </div>
-                        <div className="flex flex-row md: gap-4">
-                            {/* <div>Hello</div> */}
-                            <div><span className="branding_content_plus">+</span></div>                            <div className="branding_content">SEO/SEM Services</div>
-                        </div>
-                        <div className="flex flex-row md: gap-4">
-                            {/* <div>Hello</div> */}
-                            <div><span className="branding_content_plus">+</span></div>                            <div className="branding_content">Social Media Marketing</div>
+                    <div className="branding_padding">
+                        <div className="flex flex-col">
+                            <div>
+                                <Image src={sample_img_2} alt={"png"} width={50} height={50}/>
+                            </div>
+                            <div className="branding_title">Advertising and Marketing</div>
+                            <div className="flex flex-row md: gap-4">
+                                {/* <div>Hello</div> */}
+                                <div><span className="branding_content_plus">+</span></div>
+                                <div className="branding_content">Performance Marketing</div>
+                            </div>
+                            <div className="flex flex-row md: gap-4">
+                                {/* <div>Hello</div> */}
+                                <div><span className="branding_content_plus">+</span></div>                            <div className="branding_content">Digital Marketing</div>
+                            </div>
+                            <div className="flex flex-row md: gap-4">
+                                {/* <div>Hello</div> */}
+                                <div><span className="branding_content_plus">+</span></div>                            <div className="branding_content">LinkedIn Marketing</div>
+                            </div>
+                            <div className="flex flex-row md: gap-4">
+                                {/* <div>Hello</div> */}
+                                <div><span className="branding_content_plus">+</span></div>                            <div className="branding_content">Meta Marketing</div>
+                            </div>
+                            <div className="flex flex-row md: gap-4">
+                                {/* <div>Hello</div> */}
+                                <div><span className="branding_content_plus">+</span></div>                            <div className="branding_content">Google Ads</div>
+                            </div>
+                            <div className="flex flex-row md: gap-4">
+                                {/* <div>Hello</div> */}
+                                <div><span className="branding_content_plus">+</span></div>                            <div className="branding_content">SEO/SEM Services</div>
+                            </div>
+                            <div className="flex flex-row md: gap-4">
+                                {/* <div>Hello</div> */}
+                                <div><span className="branding_content_plus">+</span></div>                            <div className="branding_content">Social Media Marketing</div>
+                            </div>
                         </div>
                     </div>
                 </div>
