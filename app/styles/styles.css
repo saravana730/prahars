@@ -151,4 +151,75 @@
     font-size: 1.8rem;
     font-family: "SourceSansPro","SansSerif";
 }
+/* -------------------------- Services ----------------------------- */
+
+.img_padding {
+    padding-top: 5%;
+}
+
+.services_page {
+    padding-right: 2.1rem;
+    padding-left: 2.1rem;
+}
+
+.our_services{
+    font-weight: bold;
+    font-family:"WorkSans","SansSerif";
+    /* padding-left: 2.1rem; */
+    color:#412433;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.for_us {
+    line-height: 1;
+    font-weight: bold;
+    font-family:"WorkSans","SansSerif";
+    /* padding-left: 2.1rem; */
+    color: #412433;
+    font-size: 3.4rem;
+}
+
+.outlined-button {
+    font-weight: bold;
+    font-family: "SourceSansPro","SansSerif";
+    background-color: transparent;
+    border: 0.5px solid #412433;
+    border-radius: 16px;
+    color: #df0070;
+    padding: 10px 20px;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+.branding_title {
+    line-height: 2;
+    color: #412433;
+    font-family:"WorkSans","SansSerif";
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.branding_content {
+    line-height: 2;
+    color: #412433;
+    font-family: "SourceSansPro","SansSerif";
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.branding_content_plus {
+    color: #515151;
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.empty_box {
+    height: 60px;
+    width: 100%;
+}
+
+.design_deploy {
+    padding-left: 10%;
+}
 
