@@ -499,6 +499,9 @@ display:flex;
 }
 
 
+
+/* ------------------------------ client -----------------------------*/
+
 .clients_page {
     padding-left: 2.1rem;
     padding-right: 2.1rem;
@@ -636,106 +639,6 @@ display:flex;
     background-position: center;
     border: 0.1rem solid #e4e4e4;
     border-radius: 20px; 
-}
-
-
-
-/* ------------------------------  testimonialsPage -------------------------*/
-.testimonials{
-    min-height:100vh;
-    font-family: var(--primary-font);
-    overflow-x: hidden;
-}
-.testimonialTitle1{
-    font-size:40px;
-    /* font-weight: 900; */
-    color:var(--tertiary-color);
-}
-.testimonialTitle2{
-    color:var(--primary-color);
-}
-.testimonialsContent{
-    background-color: var(--testimonials-background);
-    min-height: 60vh;
-}
-.testimonialContainer{
-    width:280px;
-    height:250px;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-between;
-    background-color: var(--white-color);
-    padding: 3%;
-}
-.testimonialContent{
-    font-size:22px;
-    color:var(--testimonials-content);
-    font-weight:800;
-}
-.testCompanyContent{
-    font-size:18px;
-    color:var(--testimonials-content)
-}
-.testCompanyValue{
-    font-size:22px;
-    color:var(--testimonials-content);
-    font-weight:800;
-}
-.testCompanyName{
-    font-size:18px;
-    color:var(--secondary-color);
-    font-weight:800;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-.custom-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2rem;
-    cursor: pointer;
-    color: #000; 
-    z-index: 999;
-  }
-  
-  .custom-arrow-left {
-    left: 0;
-  }
-  
-  .custom-arrow-right {
-    right: 0;
-  }
-.slick-dots{
-    bottom:-80px  !important;
-}
-.slick-dots li.slick-active button:before{
-    color:var(--secondary-color) !important;
-}
-.slick-dots li button{
-    color:var(--case-border-color) !important;
-    /* font-size:20px !important  */
-    
-}
-.slick-dots li button:hover {
-    color: var(--secondary-color) !important; /* Change to your desired hover color */
-  }
-.slick-prev{
-    left:-10px !important;
-    border:var(--secondary-color) !important;
-    color:var(--secondary-color) !important;
-}
-.slick-prev:before{
-    color:var(--secondary-color) !important;
- }
- .slick-next:before{
-    color:var(--secondary-color) !important;
- }
-
-.slick-next{
-    right:-10px !important;
-    border:var(--secondary-color) !important;
-    color:var(--secondary-color) !important;
 }
 
 

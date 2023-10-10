@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import '../styles/styles.css';
+import Link from 'next/link';
 
 export default function Navbar(){
     return (
@@ -15,7 +16,7 @@ export default function Navbar(){
                 <li className="service">Services</li>
                 <li className="caseStudies">Case Studies</li>
                 <li className="career">Career</li>
-                <li className="blog">Blog</li>
+                <li className="blog"><Link href=""></Link>Blog</li>
             </ul>
             </div>
             <div className='contactButton'>Contact Us</div>
