@@ -33,7 +33,7 @@
     padding-left: 2%;
     padding-right:2%;
     border-radius:20px ;
-    box-shadow: 0 10px 12px var(--nav-background-color);
+    /* box-shadow: 0 10px 12px var(--nav-background-color); */
 }
 .contactButton{
     border:1px solid var(--primary-color);
@@ -130,15 +130,17 @@
     text-align: center;
 }
 .bannercontents{
-    color: #412433;
+    color: var(--tertiary-color);
     font-weight: bold;
-    font-size: 3.5rem;
+    font-size: 6rem;
+    line-height: 1;
     font-family: "WorkSans","SansSerif";
 }
 .Simple{
-    color: #df0070;
+    color: var(--primary-color);
     font-weight: bold;
-    font-size: 3.5rem;
+    font-size: 6rem;
+    padding-top:1%;
     font-family: "WorkSans","SansSerif";
 }
 .subtitle{
@@ -146,9 +148,9 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 20%;
-    color: #412433;
-    font-size: 1.8rem;
+    padding-top: 10%;
+    color: var(--tertiary-color);
+    font-size: 3rem;
     font-family: "SourceSansPro","SansSerif";
 }
 /* -------------------------- Services ----------------------------- */
@@ -223,3 +225,231 @@
     padding-left: 10%;
 }
 
+
+/* ------------------------- case studies ----------------*/
+.caseStudiesPage{
+    /* min-height:100vh; */
+}
+.caseTitle1{
+    font-size:3rem;
+    font-weight: 600;
+    color:var(--tertiary-color);
+    font-family: "WorkSans","SansSerif";
+}
+.caseTitle2{
+    font-size:3rem;
+    font-weight: 600;
+    color:var(--primary-color);
+    font-family: "WorkSans","SansSerif";
+}
+.caseTitle3{
+    font-size:3rem;
+    font-weight: 600;
+    color:var(--tertiary-color);
+    font-family: "WorkSans","SansSerif";
+}
+
+.card1{
+    width:400px;
+    height:400px;
+    background-color: #faead3;
+    /* background-image: url('/case studies/tabImage.png'); */
+    border-radius: 30px;
+    
+}
+.card2{
+    width:400px;
+    height:400px;
+    background-image: url('/case studies/computer.png');
+    border-radius: 30px;
+    /* border:1px solid white */
+    
+}
+.card3{
+    width:400px;
+    height:400px;
+    background-image: url('/case studies/mobile.png');
+    border-radius: 30px;
+    
+}
+.card4{
+    width:400px;
+    height:400px;
+    background-image: url('/case studies/transport.png');
+    border-radius: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+    
+}
+.card5{
+    width:400px;
+    height:400px;
+    background-image: url('/case studies/music.png');
+    border-radius: 30px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-bottom-right-radius: 20px;
+}
+.arrow {
+    border:  solid var(--primary-color) ;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+  }
+  
+  .right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+   
+  }
+
+
+.caseBox{
+    border:2px solid var(--case-border-color);
+    width:fit-content;
+    padding:2px 10px;
+    border-radius: 10px;
+    color:var(--primary-color);
+    
+}
+.caseBox:hover{
+    background-color: var(--primary-color);
+    border:2px solid var(--primary-color);
+    color: var(--white-color);
+}
+.caseBox:hover .arrow{
+    border:2px solid var(--white-color);
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+}
+.cardTitle1{
+    color:var(--primary-color);
+    font-weight: 700;
+    font-size: 18px;
+}
+.cardContent1{
+    font-weight: 700;
+}
+.card1Image1{
+display:flex;
+}
+.cardContainer1:hover .card1Image1{
+    display:none;
+}
+.card1ImageZoom1{
+    display:none;
+}
+.cardContainer1:hover .card1ImageZoom1{
+    display:flex;
+}
+.cardContainer1:hover{
+    cursor: pointer;
+}
+.caseButton{
+    border:1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color:var(--white-color);
+    transition:0.6s ;
+    width:fit-content;
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;;
+    font-weight:700;
+}
+.caseButton:hover{
+    color: var(--primary-color);
+    background-color: var(--white-color);
+}
+
+
+/*---------------------------- Clients ------------------- */
+.clients{
+    min-height: 100vh;
+}
+.clientsTitle1{
+    color:var(--tertiary-color);
+    font-size:40px;
+    font-weight: 600;
+}
+.clientsTitle2{
+    color:var(--primary-color);
+    font-size:40px;
+    font-weight: 600;
+}
+.separator{
+    border: none;
+    border-top: 3px solid var(--case-border-color) !important;
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+/* ------------------------- Footer Page ----------------------------- */
+.footer{
+    background-color: var(--tertiary-color);
+    min-height: 100vh;
+}
+
+.footerContainer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--white-color);
+    border-radius: 30px;
+    gap:12px;
+    padding:3%;
+}
+.footerContainerContent1{
+    font-size:18px;
+    font-weight:400;
+    color:var(--white-color);
+}
+.footerContainerContent2{
+    font-size:32px;
+    font-weight: 700;
+    color:var(--white-color);
+}
+.footerContainerContent3{
+    font-size:16px;
+    color:var(--white-color);
+}
+.footerContainerContent2-sub{
+    color:var(--primary-color);
+}
+.footerContainerContent3-sub{
+    color:var(--primary-color);
+}
+.footerSeparator{
+    color:var(--footer-separator-color);
+}
+
+.footerImage{
+    border-radius: 50%;
+    background-color: var(--white-color);
+    width:150px;
+    height:150px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.copyrightContent{
+    font-size:16px;
+    color:var(--footer-copyrights-color);
+    font-weight: 500;
+}
+.footerHeading{
+    font-family: var(--primary-font);
+    font-size: 24px;
+    color:var(--white-color);
+    font-weight: 700;
+}
+.footerWhoContent{
+    line-height: 1;
+}
+.footerCompany{
+    font-size:20px;
+    font-family:var(--primary-font);
+    color:var(--white-color);
+}

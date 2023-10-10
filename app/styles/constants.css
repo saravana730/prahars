@@ -3,10 +3,14 @@
 :root{
     --primary-color:#df0070;
     --secondary-color: #FF04B9;
+    --tertiary-color:#412433;
+
     --font-nav-color:#2c2c2c;
     --white-color:#ffffff;
     --nav-background-color:#f9f9f9;
-
+    --case-border-color:#e4e4e4;
+    --footer-separator-color:#D9D9D9;
+    --footer-copyrights-color:#808080;
 
     /* font-size */
     --font-navbar:20px;
