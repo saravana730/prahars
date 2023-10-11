@@ -160,6 +160,7 @@
 }
 
 .services_page {
+    padding-top: 15rem;
     padding-right: 2.1rem;
     padding-left: 2.1rem;
 }
@@ -376,7 +377,7 @@ display:flex;
 /*---------------------------- Clients ------------------- */
 
 .clients_top_padding {
-    padding-top: 5rem;
+    padding-top: 1.5rem;
 }
 
 .clients{
@@ -511,6 +512,7 @@ display:flex;
 /* ------------------------------ client -----------------------------*/
 
 .clients_page {
+    padding-top: 8rem;
     padding-left: 2.1rem;
     padding-right: 2.1rem;
 }
@@ -848,6 +850,44 @@ display:flex;
 
 /*----------------------------- caseStudies ----------------------- */
 .scroll-animationPortfolio {
+    opacity: 0;
+    /* transform: translateY(20px); */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease;
+    animation: slideInFromBottom 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+  }
+
+  @keyframes slideInFromBottom {
+    from {
+      transform: translateY(25%);
+    }
+  
+    to {
+        opacity:1;
+      transform: translateY(0);
+    }
+  }
+  /* -------------------------- Clients ------------------------- */
+.scroll-clients {
+    opacity: 0;
+    /* transform: translateY(20px); */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease;
+    /* animation: slideInFromBottom 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards; */
+    animation:slideInFromBottom 4s forwards;
+  }
+
+  @keyframes slideInFromBottom {
+    from {
+      transform: translateY(25%);
+    }
+  
+    to {
+        opacity:1;
+      transform: translateY(0);
+    }
+  }
+  
+
+.scroll-services {
     opacity: 0;
     /* transform: translateY(20px); */
     transition: opacity 0.5s ease-in-out, transform 0.5s ease;

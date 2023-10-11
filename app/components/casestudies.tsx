@@ -9,7 +9,7 @@ export default function CaseStudies(){
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      const triggerPoint = window.innerHeight * 0.5;
+      const triggerPoint = window.innerHeight * 0.4;
       const triggerPointLogo = window.innerHeight * 0.2;
       // Adjust this value as needed
       setIsVisible(scrollTop > triggerPoint);
@@ -23,8 +23,8 @@ export default function CaseStudies(){
   }, []);
 
     return(
-        <div className={`scroll-animationPortfolio ${isVisible ? '' : ''}`}>
-        <div className="flex caseStudiesPage flex-col pt-32 pb-32">
+        // <div className={`scroll-animationPortfolio ${isVisible ? '' : ''}`}>
+        <div className="flex caseStudiesPage flex-col pt-16 pb-16">
             <div className="flex pl-8 pr-8 flex-row md:gap-12">
                 <div className="flex flex-col md:gap-6 cardContainer1">
                     <div className="flex flex-col ">
@@ -70,7 +70,7 @@ export default function CaseStudies(){
                 <div className='caseButton '>See All Work</div>
             </div>
         </div>
-        </div>
+        // </div>
     )
 }
 

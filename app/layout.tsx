@@ -32,10 +32,10 @@ export default function RootLayout({
         </div>
         <div><CaseStudies /></div>
         <div>
-          <Services/>
+          <Clients />
         </div>
         <div>
-          <Clients />
+          <Services/>
         </div>
         <div>
           {/* <Blogs /> */}
