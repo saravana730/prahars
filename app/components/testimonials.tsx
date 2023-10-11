@@ -70,6 +70,23 @@ export default function Testimonials(): React.JSX.Element{
       }
     }
   }, []);
+  const [isVisible, setIsVisible]=useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const triggerPoint = window.innerHeight * 0.5;
+      const triggerPointLogo = window.innerHeight * 0.2;
+      // Adjust this value as needed
+      setIsVisible(scrollTop > triggerPoint);
+    //   setLogoVisible(scrollTop > triggerPointLogo);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
     
     const settings = {
         dots:true,
@@ -88,6 +105,7 @@ export default function Testimonials(): React.JSX.Element{
    
     return(
         <div className='testimonials '>
+            <div className={`scroll-animationPortfolio ${isVisible ? '' : ''}`}>
             <div className='flex flex-col pt-4 pb-4 pl-10'>
                 <div className='testimonialTitle1 font-extrabold'><span className='testimonialTitle2'>Clients love us</span>, but</div>
                 <div className='testimonialTitle1 font-extrabold'>don’t take our word</div>
@@ -130,6 +148,7 @@ export default function Testimonials(): React.JSX.Element{
                   ))}
                 </Slider>
                 </div>
+            </div>
             </div>
         </div>
     )

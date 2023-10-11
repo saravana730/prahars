@@ -3,6 +3,7 @@ import React from 'react';
 import '../app/styles/styles.css'
 import Image from 'next/image';
 import forward_arrow from "/public/blog/icons8-forward-100.png";
+import Navbar from '@/app/components/navbar';
 // import calendar from '../blog/calendar.png';
 // import sheet from '/blog/news.png';
 // import profile from '/blog/owner.png';
