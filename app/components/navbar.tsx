@@ -2,8 +2,21 @@
 import React from 'react';
 import '../styles/styles.css';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
 
 export default function Navbar(){
+
+    const [isOpen, setIsopen] = useState(false);
+  const handleToggle = (e: { stopPropagation: () => void; }) => {
+    if (typeof window !== 'undefined') {
+      if (window.innerWidth <= 768) {
+        e.stopPropagation();
+        setIsopen(!isOpen);
+      }
+    }
+    
+  }
+
     return (
         <div className='navbar'>
        <nav className=' navbarItemsBox'>
@@ -22,6 +35,11 @@ export default function Navbar(){
             <div className='contactButton'>Contact Us</div>
         {/* </div> */}
        </nav>
+       <div className="hamburger-icon " onClick={handleToggle}>
+          <div className={`bar ${isOpen ? 'open' : ''}`}></div>
+          <div className={`bar ${isOpen ? 'open' : ''}`}></div>
+          <div className={`bar ${isOpen ? 'open' : ''}`}></div>
+        </div>
        </div>
     )
 }
