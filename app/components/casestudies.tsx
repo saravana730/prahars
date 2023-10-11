@@ -1,8 +1,29 @@
-
+'use client';
 import '../styles/styles.css';
+import { useEffect, useState } from 'react';
 
 export default function CaseStudies(){
+    const [isVisible, setIsVisible] = useState(false);
+//   const [isLogo, setLogoVisible] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      const triggerPoint = window.innerHeight * 0.5;
+      const triggerPointLogo = window.innerHeight * 0.2;
+      // Adjust this value as needed
+      setIsVisible(scrollTop > triggerPoint);
+    //   setLogoVisible(scrollTop > triggerPointLogo);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
     return(
+        <div className={`scroll-animationPortfolio ${isVisible ? '' : ''}`}>
         <div className="flex caseStudiesPage flex-col pt-32 pb-32">
             <div className="flex pl-8 pr-8 flex-row md:gap-12">
                 <div className="flex flex-col md:gap-6 cardContainer1">
@@ -48,6 +69,7 @@ export default function CaseStudies(){
             <div className='flex items-center justify-center pt-6'>
                 <div className='caseButton '>See All Work</div>
             </div>
+        </div>
         </div>
     )
 }

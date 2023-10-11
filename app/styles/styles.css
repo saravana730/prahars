@@ -379,7 +379,8 @@ display:flex;
 }
 
 .clients_empty_box {
-    height: 150px;
+    /* height: 150px; */
+    padding-bottom:6%;
     width: 100%
 }
 .clientsTitle1{
@@ -835,6 +836,27 @@ display:flex;
     padding-top: 3%;
 }
 
+
+/*----------------------------- scroll section -----------------------*/
+
+/*----------------------------- caseStudies ----------------------- */
+.scroll-animationPortfolio {
+    opacity: 0;
+    /* transform: translateY(20px); */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease;
+    animation: slideInFromBottom 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+  }
+
+  @keyframes slideInFromBottom {
+    from {
+      transform: translateY(25%);
+    }
+  
+    to {
+        opacity:1;
+      transform: translateY(0);
+    }
+  }
 
 
 
