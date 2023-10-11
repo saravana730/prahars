@@ -24,14 +24,14 @@ export default function Services(){
                             <div className="for_us"><span style={{color:"#df0070"}}>work.</span></div>
                         </div>
                         <div className="empty_box"></div>
-                        <div>
+                        {/* <div>
                             <button className="outlined-button">
                                 <div className="flex flex-row md: gap-1">
                                     <div>Read More</div>
                                     <div className="img_padding"><Image src={forward_arrow} alt='>' width={25} height={25} /></div>
                                 </div>
                             </button>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="branding_padding">
                         <div className="flex flex-col">

@@ -166,10 +166,10 @@
 
 .our_services{
     font-weight: bold;
-    font-family:"WorkSans","SansSerif";
+    font-family:"SourceSansPro","SansSerif";
     /* padding-left: 2.1rem; */
     color:#412433;
-    font-size: 1.7rem;
+    font-size: 2.1rem;
     font-weight: 700;
 }
 
@@ -214,7 +214,7 @@
 .branding_content {
     line-height: 2;
     color: #412433;
-    font-family: "SourceSansPro","SansSerif";
+    font-family: "SourceSansPro","sans-serif";
     font-size: 1.1rem;
     font-weight: 600;
 }
@@ -374,6 +374,11 @@ display:flex;
 
 
 /*---------------------------- Clients ------------------- */
+
+.clients_top_padding {
+    padding-top: 5rem;
+}
+
 .clients{
     min-height: 100vh;
 }
@@ -384,13 +389,15 @@ display:flex;
 }
 .clientsTitle1{
     color:var(--tertiary-color);
-    font-size:40px;
-    font-weight: 600;
+    font-size:3.4rem;
+    font-weight: bold;
+    font-family:"WorkSans","SansSerif";
 }
 .clientsTitle2{
     color:var(--primary-color);
-    font-size:40px;
+    font-size:3rem;
     font-weight: 600;
+    font-family:"WorkSans","SansSerif";
 }
 .separator{
     border: none;
@@ -603,7 +610,7 @@ display:flex;
 .border_shortflix {
     height: 100px;
     width: 276px;
-    background-image: url('/clients/IMG_2071.JPG');
+    background-image: url('/clients/IMG_2070.JPG');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -613,7 +620,7 @@ display:flex;
 .border_musictube {
     height: 100px;
     width: 276px;
-    background-image: url('/clients/IMG_2070.JPG');
+    background-image: url('/clients/IMG_2071.JPG');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -716,11 +723,11 @@ display:flex;
 
 .blog_page {
     padding-left: 2.1rem;
-    padding-top: 2.1rem;
+    padding-top: 10rem;
     padding-bottom: 2.1rem
 }
 
-.blog_page {
+.blog_content {
     line-height: 1;
     font-weight: bold;
     font-family:"WorkSans","SansSerif";
