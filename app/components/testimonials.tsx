@@ -93,7 +93,7 @@ export default function Testimonials(): React.JSX.Element{
                 <div className='testimonialTitle1 font-extrabold'>don’t take our word</div>
                 <div className='testimonialTitle1 font-extrabold'>for it.</div>
             </div>
-            <div className='testimonialsContent'>
+            <div className='testimonialsContent '>
                 <div className=' flex flex-row md:gap-4 pt-6 pl-10'>
                     <div className="testimonialContent">Prahars Review</div>
                     <div className="testimonialContent">4.5</div>

@@ -16,7 +16,7 @@ export default function Navbar(){
                 <li className="service">Services</li>
                 <li className="caseStudies">Case Studies</li>
                 <li className="career">Career</li>
-                <li className="blog"><Link href=""></Link>Blog</li>
+                <li className="blog"><Link href="/blog"></Link>Blog</li>
             </ul>
             </div>
             <div className='contactButton'>Contact Us</div>
