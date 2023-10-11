@@ -10,6 +10,7 @@ import Clients from './components/clients';
 import Footer from './components/footer';
 import Blogs from '../pages/blog';
 import Testimonials from './components/testimonials';
+import '../app/styles/mobile.css';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -26,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className='LandingPage'>
+        <div className='LandingPage flex'>
         <Navbar/>
         <Banner />
         </div>
