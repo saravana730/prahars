@@ -200,6 +200,10 @@
     padding-left: 2.1rem;
 }
 
+/* .ourservices_padding {
+    padding-top:5px;
+} */
+
 .our_services{
     font-weight: bold;
     font-family:"SourceSansPro","SansSerif";
@@ -220,7 +224,7 @@
 }
 
 .branding_padding {
-    padding-top: 65px;
+    padding-top: 140px;
 }
 
 .for_us_padding {
@@ -267,7 +271,7 @@
 }
 
 .design_deploy {
-    padding-left: 11%;
+    padding-left: 1%;
 }
 
 
@@ -313,7 +317,9 @@
 .card3{
     width:400px;
     height:400px;
-    background-image: url('/case studies/mobile.png');
+    background-color: #515151;
+    background-image: url('/case studies/shortflix_clay_1.png');
+    background-size: cover;
     border-radius: 30px;
     
 }

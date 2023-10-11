@@ -46,7 +46,7 @@ export default function CaseStudies(){
                     <div className='caseBox'> View Case Study <div className='arrow right'></div></div>
                 </div>
                 <div className='flex flex-col md:gap-6 pt-2'>
-                    <div className="card3"></div>
+                    <div className="card3 justify-center"></div>
                     <div className="cardTitle1">SHORTFLIX</div>
                     <div className="cardContent1">Avg cost per download - 14 per Download</div>
                     <div className='caseBox'> View Case Study <div className='arrow right'></div></div>

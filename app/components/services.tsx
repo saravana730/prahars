@@ -31,23 +31,25 @@ export default function Services(){
             <div className="services_page">
             <div className="flex flex-col">
                 <div className="flex flex-row justify-between">
-                    <div className="flex flex-col   ">
-                        <div className="our_services">OUR SERVICES</div>
-                        {/* <div className="empty_box"></div> */}
-                        <div className="for_us_padding">
-                            <div className="for_us">For us, this is</div>
-                            <div className="for_us">all in <span style={{color:"#df0070"}}>a day's</span></div>
-                            <div className="for_us"><span style={{color:"#df0070"}}>work.</span></div>
+                    <div>
+                        <div className="flex flex-col   ">
+                            <div className="our_services">OUR SERVICES</div>
+                            {/* <div className="empty_box"></div> */}
+                            <div className="for_us_padding">
+                                <div className="for_us">For us, this is</div>
+                                <div className="for_us">all in <span style={{color:"#df0070"}}>a day's</span></div>
+                                <div className="for_us"><span style={{color:"#df0070"}}>work.</span></div>
+                            </div>
+                            <div className="empty_box"></div>
+                            {/* <div>
+                                <button className="outlined-button">
+                                    <div className="flex flex-row md: gap-1">
+                                        <div>Read More</div>
+                                        <div className="img_padding"><Image src={forward_arrow} alt='>' width={25} height={25} /></div>
+                                    </div>
+                                </button>
+                            </div> */}
                         </div>
-                        <div className="empty_box"></div>
-                        {/* <div>
-                            <button className="outlined-button">
-                                <div className="flex flex-row md: gap-1">
-                                    <div>Read More</div>
-                                    <div className="img_padding"><Image src={forward_arrow} alt='>' width={25} height={25} /></div>
-                                </div>
-                            </button>
-                        </div> */}
                     </div>
                     <div className="branding_padding">
                         <div className="flex flex-col">
