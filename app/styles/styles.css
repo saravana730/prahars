@@ -122,6 +122,10 @@
 }
 
 /* --------------------------------------  Banner  --------------------------- */
+
+
+
+  
 .banner{
     padding-top: 15%;
     display: flex;
@@ -136,12 +140,43 @@
     line-height: 1;
     font-family: "WorkSans","SansSerif";
 }
-.Simple{
+.Simple:before{
+    content: 'Simple';
     color: var(--primary-color);
     font-weight: bold;
     font-size: 6rem;
     padding-top:1%;
     font-family: "WorkSans","SansSerif";
+    animation-name: replacement;
+	animation-duration: 5s;
+  	animation-timing-function: ease-out;
+  	animation-iteration-count: infinite;
+    animation-direction: absolute;
+}
+@keyframes replacement{
+    0%{
+        opacity:1
+    }
+    25%{
+        opacity:0
+    }
+    35%{
+        opacity: 1;
+        content:'easy';
+    }
+    50%{
+        opacity:0;
+    }
+    75%{
+        opacity:1;
+        content:'efficient';
+    }
+    100%{
+        opacity:0;
+        
+    }
+
+
 }
 .subtitle{
     display: flex;
@@ -416,12 +451,17 @@ display:flex;
     overflow-x: hidden;
 }
 .testimonialTitle1{
-    font-size:40px;
-    /* font-weight: 900; */
     color:var(--tertiary-color);
+    font-size:3.4rem;
+    font-weight: bold;
+    line-height: 1;
+    font-family:"WorkSans","SansSerif";
 }
 .testimonialTitle2{
     color:var(--primary-color);
+    font-size:3.4rem;
+    font-weight: bold;
+    font-family:"WorkSans","SansSerif";
 }
 .testimonialsContent{
     background-color: var(--testimonials-background);
