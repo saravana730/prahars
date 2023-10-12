@@ -8,6 +8,7 @@ body{
 }
 
 .LandingPage{
+    
     min-height:100vh;
 }
 
@@ -17,10 +18,12 @@ body{
     align-items: center;
     text-align: center;
     width:100%;
-    
 }
 .banner{
     display:none ;
+}
+.bannercontents{
+    font-size: 3.5rem;
 }
 
 /* ---------------------------- case studies  -------------------------*/
