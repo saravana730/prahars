@@ -27,7 +27,7 @@ export default function Services(){
         };
       }, []);
     return(
-        <div  className={`scroll-services ${isVisible ? '' : ''}`}>
+        <div  className={`scroll-services ${isVisible ? '' : ''}`} id="Services">
             
                 <div className="services_page">
                 <div className="flex flex-col">

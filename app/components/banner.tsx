@@ -4,7 +4,7 @@ import '../styles/styles.css';
 
 export default function Banner(){
     return(
-        <div>
+        <div id="Home">
             <div className= "banner">
                 <div className="bannercontents">
                     Relevant digital lead <br />
@@ -17,7 +17,7 @@ export default function Banner(){
             </div>
             <div className= "mobileBanner">
                 <div className="bannercontents">
-                    Relevant digital lead <br />
+                    Relevant digital lead 
                     generation made<br />
                     <p className="Simple"></p>
                     <div className="subtitle">
