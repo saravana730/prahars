@@ -13,18 +13,55 @@
   }
 
 /* -------------------------------- Navbar ----------------------------------- */
+
+.hamburger-icon {
+    display: none;
+    cursor: pointer;
+    color: white
+  }
+  
+  .bar {
+    height: 3px;
+    width: 25px;
+    background-color: #fff;
+    margin: 5px auto;
+  }
+  
+  .bar.open:nth-child(1) {
+    transform: translateY(6px) rotate(-45deg);
+  }
+  
+  .bar.open:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .bar.open:nth-child(3) {
+    transform: translateY(-10px) rotate(45deg);
+  }
+
+  .menu{
+    /* position:absolute; */
+    cursor:pointer;
+    display:none;
+  }
+  .navbarMenu{
+    display:none;
+  }
+.itemsList{
+    display:flex;flex-direction: row;
+}
 .navbar{
     position: fixed;
     top:0;
     width:100%;
     display:flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
     padding-left: 2%;
     padding-right:2%;
     padding-top:1%;
     /* overflow: hidden; */
-    z-index:999;
+    z-index:100;
     font-family: var(--primary-font);
 }
 .navbarItemsBox{
@@ -49,6 +86,7 @@
     font-size: var(--font-contact);
     font-weight: 800;
     transition:0.6s;
+    height:fit-content;
 }
 .contactButton:hover{
     color:var(--secondary-color);
