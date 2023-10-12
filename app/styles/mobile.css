@@ -3,7 +3,7 @@
 @media  (max-width :768px) {
 
 body{
-    /* width:310% !important; */
+    width:100% !important;
     background-color: var(--white-colour) !important;
 }
 
@@ -21,6 +21,14 @@ body{
 }
 .banner{
     display:none ;
+}
+
+/* ---------------------------- case studies  -------------------------*/
+.desktopCase{
+    display:none;
+}
+.mobileCase{
+    /* display:flex; */
 }
 
 }

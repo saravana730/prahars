@@ -292,6 +292,12 @@
 .caseStudiesPage{
     /* min-height:100vh; */
 }
+.desktopCase{
+    display:flex;
+}
+.mobileCase{
+    display:none;
+}
 .caseTitle1{
     font-size:3rem;
     font-weight: 600;
@@ -992,7 +998,7 @@ display:flex;
 }
 
 .read_more_justify {
-    justify-content: end;
+    justify-content: flex-end;
     cursor: pointer;
     display: flex;
     flex-direction: row;
