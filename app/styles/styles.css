@@ -784,6 +784,7 @@ display:flex;
 /* ------------------------- Blogs ------------------------ */
 
 .blog_page {
+    padding-right: 2.1rem;
     padding-left: 2.1rem;
     padding-top: 10rem;
     padding-bottom: 2.1rem
@@ -902,6 +903,11 @@ display:flex;
 
 .blog_img_padding {
     padding-top: 3%;
+    padding-left: 2px;
+}
+
+.right_side_blog {
+    padding-left: 60px;
 }
 
 
@@ -964,6 +970,51 @@ display:flex;
     }
   }
 
+/* ------------------------------ Pages ------------------------ */
+.blog_border {
+    width:400px;
+    height:400px;
+    background-image: url('/case studies/tabImage.png');
+    border-radius: 30px;
+}
+
+.read_more_justify {
+    display: flex;
+    flex-direction: row;
+    padding-left: 2px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.read_more_row {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: row;
+    font-weight: bold;
+    font-family: "SourceSansPro","SansSerif";
+    background-color: transparent;
+    /* border: 0.5px solid #412433;
+    border-radius: 16px; */
+    color: #df0070;
+    /* padding: 10px 20px; */
+    font-size: 1.7rem;
+    font-weight: 700;
+    padding-top: 18px;
+}
+
+.read_more_arrow {
+    padding-bottom: 18px;
+}
+
+.col{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column; 
+}
 
 
 
