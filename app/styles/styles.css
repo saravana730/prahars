@@ -783,6 +783,14 @@ display:flex;
 
 /* ------------------------- Blogs ------------------------ */
 
+.blog_padding_page {
+    padding-top: 40px;
+}
+
+.blog_padding_page_title {
+    margin-top: 0px;
+}
+
 .outlined-button_blog {
     cursor: pointer;
     font-weight: bold;
