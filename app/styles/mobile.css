@@ -66,7 +66,58 @@ body{
     display:none;
 }
 .mobileServices{
-    /* display:flex; */
+    display:flex;
+}
+
+.our_services_mobile{
+    font-weight: bold;
+    font-family:"SourceSansPro","SansSerif";
+    /* padding-left: 2.1rem; */
+    color:#412433;
+    font-size: 1.7rem;  /* 2.1*/
+    font-weight: 700;
+}
+
+.for_us_mobile {
+    /* padding-top: 25px; */
+    line-height: 1.5;
+    font-weight: bold;
+    font-family:"WorkSans","SansSerif";
+    /* padding-left: 2.1rem; */
+    color: #412433;
+    font-size: 2.4rem;  /* 3.4*/
+}
+
+.branding_padding_mobile {
+    padding-top: 50px;
+}
+
+.branding_title_mobile{
+    padding-left: 25px;
+    line-height: 2;
+    color: #412433;
+    font-family:"WorkSans","SansSerif";
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.branding_content_mobile {
+    line-height: 2;
+    color: #412433;
+    font-family: "SourceSansPro","sans-serif";
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.branding_content_plus_mobile {
+    padding-top: 8px;
+    color: #515151;
+    font-size: 1.8rem;
+    line-height: 1;
+}
+
+.branding_img_padding {
+    padding-top: 14px;
 }
 /* ---------------------------- case studies  -------------------------*/
 .desktopCase{
