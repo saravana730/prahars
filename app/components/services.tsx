@@ -28,7 +28,7 @@ export default function Services(){
       }, []);
     return(
         <div  className={`scroll-services ${isVisible ? '' : ''}`}>
-            <div className="desktopServices">
+            <div className="desktopServices "> 
                 <div className="services_page">
                 <div className="flex flex-col">
                     <div className="flex flex-row justify-between">
