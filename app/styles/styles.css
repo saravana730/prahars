@@ -203,6 +203,14 @@
 }
 /* -------------------------- Services ----------------------------- */
 
+.desktopServices{
+    display: flex;
+}
+
+.mobileServices{
+    display: none;
+}
+
 .img_padding {
     padding-top: 5%;
 }
