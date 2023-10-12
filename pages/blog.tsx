@@ -10,7 +10,8 @@ import Navbar from '@/app/components/navbar';
 
 export default function Blogs() {
     return(
-        <div className="blog_page">
+        <div className="blog_padding_page_title">
+            <div className="blog_page">
             <div className="blog_content">
                 Know why at <br />
                 <span style={{color:"#df0070"}}>our blogs</span>
@@ -54,6 +55,7 @@ export default function Blogs() {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
         
     )

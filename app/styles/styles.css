@@ -203,6 +203,14 @@
 }
 /* -------------------------- Services ----------------------------- */
 
+.desktopServices{
+    display: flex;
+}
+
+.mobileServices{
+    display: none;
+}
+
 .img_padding {
     padding-top: 5%;
 }
@@ -788,6 +796,14 @@ display:flex;
 
 
 /* ------------------------- Blogs ------------------------ */
+
+.blog_padding_page {
+    padding-top: 40px;
+}
+
+.blog_padding_page_title {
+    margin-top: 0px;
+}
 
 .outlined-button_blog {
     cursor: pointer;
