@@ -3,7 +3,7 @@
 
 export default function Footer(){
     return(
-        <div className="footer mt-8">
+        <div className="footer mt-8" id="About Us">
             <div className="pt-24 pl-6 pr-6">
             <div className="footerContainer  ">
                 <div className="footerContainerContent1">READY TO LEVERAGE DIGITAL ?</div>

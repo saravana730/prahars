@@ -23,7 +23,7 @@ export default function CaseStudies(){
   }, []);
 
     return(
-        <div className={`scroll-animationPortfolio ${isVisible ? '' : ''}`}>
+        <div className={`scroll-animationPortfolio ${isVisible ? '' : ''}`}  id="Casestudies">
             <div className='desktopCase'>
             <div className="flex caseStudiesPage flex-col pt-16 pb-16">
                 <div className="flex pl-8 pr-8 flex-row md:gap-12">

@@ -5,6 +5,13 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 
 export default function Navbar(){
+  const scrollToSection = (sectionId: string) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+      
+    }
+  };
 
   //   const [isOpen, setIsopen] = useState(false);
   // const handleToggle = (e: { stopPropagation: () => void; }) => {
@@ -40,11 +47,11 @@ export default function Navbar(){
           {/* <div className='menu'><img src="menuIcon.png"/></div> */}
             <div className={`navbarMenu ${isOpen ? 'open' : 'visibleHidden'}`}>
                 <ul className="itemsList md:gap-8 ">
-                    <li className="home">Home</li>
-                    <li className="about">About Us</li>
-                    <li className="service">Services</li>
-                    <li className="caseStudies">Case Studies</li>
-                    <li className="career">Career</li>
+                    <li className="home" onClick={() => scrollToSection("Home")}>Home</li>
+                    <li className="about" onClick={() => scrollToSection("About Us")}>About Us</li>
+                    <li className="service" onClick={() => scrollToSection("Services")}>Services</li>
+                    <li className="caseStudies" onClick={() => scrollToSection("Casestudies")}>Case Studies</li>
+                    <li className="career" onClick={() => scrollToSection("About Us")}>Career</li>
                     <li className="blog"><a href="/blog">Blog</a></li>
                 </ul>
             </div>
