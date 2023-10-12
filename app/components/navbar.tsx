@@ -16,14 +16,29 @@ export default function Navbar(){
   //   }
     
   // }
+  
+    const [isOpen, setIsOpen] = useState(false);
+  
+    const handleToggle = (e: { stopPropagation: () => void; }) => {
+      if (typeof window !== 'undefined') {
+        if (window.innerWidth <= 768) {
+          e.stopPropagation();
+          setIsOpen(!isOpen);
+        }
+      }
+      
+    }
+  
+
+ 
 
     return (
         <div className='navbar'>
        <nav className=' navbarItemsBox'>
-        <div><img src="logo.png" className="w-32"/></div>
+        <div className={`navbarLogo ${isOpen ? 'open' : ''}`}><img src="logo.png" className="w-32"/></div>
         {/* <div className=''> */}
-          <div className='menu'><img src="menuIcon.png"/></div>
-            <div className="navbarMenu">
+          {/* <div className='menu'><img src="menuIcon.png"/></div> */}
+            <div className={`navbarMenu ${isOpen ? 'open' : 'visibleHidden'}`}>
                 <ul className="itemsList md:gap-8 ">
                     <li className="home">Home</li>
                     <li className="about">About Us</li>
@@ -33,6 +48,12 @@ export default function Navbar(){
                     <li className="blog"><a href="/blog">Blog</a></li>
                 </ul>
             </div>
+            <div className="hamburger-icon " onClick={handleToggle}>
+              <div className={`bar ${isOpen ? 'open' : ''}`}></div>
+              <div className={`bar ${isOpen ? 'open' : ''}`}></div>
+              <div className={`bar ${isOpen ? 'open' : ''}`}></div>
+            </div>
+
             <div className='contactButton'>Contact Us</div>
         {/* </div> */}
        </nav>
