@@ -32,8 +32,8 @@ export default function Clients(){
              </div>
              {/* <div className="clients_empty_box"></div> */}
              {/* <div className='separator mt-12 mb-10'></div> */}
-             <div className="clients_page">
-                 <div className="flex flex-col">
+            <div className="clients_page">
+                <div className="flex flex-col">
                          <div className="flex flex-row justify-between">
                              <div className="border_ice_courier"></div>
                              <div className="border_insight_consulting"></div>
@@ -54,9 +54,8 @@ export default function Clients(){
                              <div className="border_musictube"></div>
                              <div className="border_shortflix"></div>
                          </div>
-                      </div>
-                
-             </div>
+                </div>
+            </div>
          </div>
         //  {/* </div> */}
         //  </div>
