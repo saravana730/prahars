@@ -486,6 +486,16 @@ display:flex;
 
 /*---------------------------- Clients ------------------- */
 
+.desktopClients {
+    display: flex;
+    width:100%;
+    flex-direction:column;
+}
+
+.mobileClients {
+    display: none;
+}
+
 .clients_top_padding {
     padding-top: 1.5rem;
 }
@@ -524,6 +534,12 @@ display:flex;
     min-height:100vh;
     font-family: var(--primary-font);
     /* overflow-x: hidden; */
+}
+.desktopTestimonials {
+    /* display: flex;  */
+}
+.mobileTestimonials {
+    display: none;
 }
 .testimonialTitle1{
     color:var(--tertiary-color);
@@ -625,11 +641,23 @@ display:flex;
 
 
 /* ------------------------------ client -----------------------------*/
+.clientContainer{
+    width:276px;
+    height:100px;
+    background-position: center;
+    border: 0.1rem solid #e4e4e4;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .clients_page {
     padding-top: 8rem;
     padding-left: 2.1rem;
     padding-right: 2.1rem;
+    /* display:flex;
+    flex-wrap: wrap; */
 }
 
 .client_empty_box {
@@ -641,7 +669,7 @@ display:flex;
     height: 100px;
     width: 276px;
     background-image: url('/clients/IMG_1729.PNG');
-    background-size: fit;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     border: 0.1rem solid #e4e4e4;
@@ -674,7 +702,7 @@ display:flex;
     height: 100px;
     width: 276px;
     background-image: url('/clients/IMG_2012-removebg-preview.png');
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     border: 0.1rem solid #e4e4e4;
@@ -768,6 +796,13 @@ display:flex;
 
 
 /* ------------------------- Footer Page ----------------------------- */
+
+.desktopFooter {
+    /* display: flex; */
+}
+.mobileFooter {
+    display: none;
+}
 .footer{
     background-color: var(--tertiary-color);
     min-height: 100vh;
@@ -819,7 +854,7 @@ display:flex;
 .copyrightContent{
     font-size:16px;
     color:var(--footer-copyrights-color);
-    font-weight: 500;
+    font-weight: 500;   
 }
 .footerHeading{
     font-family: var(--primary-font);
@@ -838,7 +873,6 @@ display:flex;
 
 
 /* ------------------------- Blogs ------------------------ */
-
 .blog_padding_page {
     padding-top: 40px;
 }
@@ -846,7 +880,12 @@ display:flex;
 .blog_padding_page_title {
     margin-top: 0px;
 }
-
+.desktopBlog{
+    display: flex;
+}
+.mobileBlog{
+    display: none;
+}
 .outlined-button_blog {
     cursor: pointer;
     font-weight: bold;

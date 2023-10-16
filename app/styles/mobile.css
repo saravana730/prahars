@@ -102,6 +102,170 @@ body{
     align-items: flex-start;
    
 }
+/* ------------------------------ Clients ------------------------- */
+
+.desktopClients {
+    display: none;
+}
+
+.mobileClients {
+    display: flex;
+}
+
+.clients_page_padding_mobile {
+    padding-top: 3rem;
+}
+
+.clientsTitle1_mobile{
+    color:var(--tertiary-color);
+    font-size:2.4rem;
+    font-weight: bold;
+    font-family:"WorkSans","SansSerif";
+}
+
+.clientsTitle2_mobile{
+    color:var(--primary-color);
+    font-size:2.4rem;
+    font-weight: bold;
+    font-family:"WorkSans","SansSerif";
+}
+
+.border_ice_courier_mobile{
+    height: 80px;
+    width: 220px;
+    background-image: url('/clients/IMG_1729.PNG');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0.1rem solid #e4e4e4;
+    border-radius: 20px;
+}
+
+.border_insight_consulting_mobile{
+    height: 80px;
+    width: 220px;
+    background-image: url('/clients/IMG_1917.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0.1rem solid #e4e4e4;
+    border-radius: 20px;
+}
+
+.border_kad_construction_mobile{
+    height: 80px;
+    width: 220px;
+    background-image: url('/clients/IMG_1973.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0.1rem solid #e4e4e4;
+    border-radius: 20px;
+}
+
+.border_vd_mobile{
+    height: 80px;
+    width: 220px;
+    background-image: url('/clients/IMG_2012-removebg-preview.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0.1rem solid #e4e4e4;
+    border-radius: 20px;
+}
+
+.border_saadhaga_paravaigal_mobile {
+    height: 80px;
+    width: 220px;
+    background-image: url('/clients/IMG_2043.PNG');
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0.1rem solid #e4e4e4;
+    border-radius: 20px; 
+}
+
+.border_aruvadai_mobile {
+    height: 80px;
+    width: 220px;
+    background-image: url('/clients/IMG_2064.PNG');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0.1rem solid #e4e4e4;
+    border-radius: 20px; 
+}
+
+.border_glimmerwood_mobile {
+    height: 80px;
+    width: 220px;
+    background-image: url('/clients/IMG_2066.PNG');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0.1rem solid #e4e4e4;
+    border-radius: 20px; 
+}
+
+.border_anandan_digital_mobile {
+    height: 80px;
+    width: 220px;
+    background-image: url('/clients/IMG_2068.PNG');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0.1rem solid #e4e4e4;
+    border-radius: 20px; 
+}
+
+.border_shortflix_mobile {
+    height: 80px;
+    width: 220px;
+    background-image: url('/clients/IMG_2070.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0.1rem solid #e4e4e4;
+    border-radius: 20px; 
+}
+.border_musictube_mobile {
+    height: 80px;
+    width: 220px;
+    background-image: url('/clients/IMG_2071.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0.1rem solid #e4e4e4;
+    border-radius: 20px; 
+}
+.border_unidesigns_mobile {
+    height: 80px;
+    width: 220px;
+    background-image: url('/clients/IMG_2073.PNG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0.1rem solid #e4e4e4;
+    border-radius: 20px; 
+}
+.border_suryamithran_mobile {
+    height: 80px;
+    width: 220px;
+    background-image: url('/clients/IMG_2075.PNG');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0.1rem solid #e4e4e4;
+    border-radius: 20px; 
+}
+
+.clientContainer{
+    height:80px;
+    width:220px;
+    border: 0.1rem solid #e4e4e4;
+    border-radius: 20px;
+    
+}
 
 /* ------------------------------ services  -------------------------*/
 .services_page{
@@ -166,7 +330,85 @@ body{
     display:none;
 }
 .mobileCase{
-    /* display:flex; */
+    display:flex;
 }
-
+/* ---------------------------- Testimonials ------------------------- */
+.desktopTestimonials {
+    display: none;
+}
+.mobileTestimonials {
+    display:contents;
+}
+.testimonialContainer_mobile{
+    width: 100%;
+    height:357px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: var(--white-color);
+    padding: 3%;
+}
+/* ---------------------------- Footer ------------------------------- */
+.desktopFooter {
+    display: none;
+}
+.mobileFooter {
+    display: flex;
+}
+.footerContainerContent1_mobile {
+    color: var(--white-color);
+    line-height: 1;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.footerContainerContent2_mobile {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    color:var(--white-color);
+}
+.footerContainerContent2-sub_mobile{
+    color:var(--primary-color);
+}
+.footerContainerContent3{
+    font-size: 1.2rem;
+    color:var(--white-color);
+}
+.footerHeading{
+    font-family: var(--secondary-font);
+    font-size: 1.8rem;
+    color:var(--white-color);
+    font-weight: 700;
+    padding-top: 30px;
+    padding-bottom: 15px;
+}
+.footerCompany{
+    line-height: 2;
+    font-size: 1.6rem;
+    font-family:var(--primary-font);
+    color:var(--white-color);
+}
+.footerCompany_findUs{
+    padding-left: 10px;
+    line-height: 2;
+    font-size: 1.6rem;
+    font-family:var(--primary-font);
+    color:var(--white-color);
+}
+/* --------------------------------- Blogs ------------------------------ */
+.desktopBlog{
+    display: none;
+}
+.mobileBlog {
+    display: flex;
+}
+.bg_image_1_mobile {
+    height: 600px;
+    width: 100%;
+    background-image: url('/blog/thumbnail (3).png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 0.1rem solid #e4e4e4; 
+}
 }
