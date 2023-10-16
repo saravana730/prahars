@@ -339,8 +339,16 @@
 
 
 /* ------------------------- case studies ----------------*/
+.card-container {
+    width: 33%;
+}
+
+.card-container-mobile {
+    width: 100%;
+}
 .caseStudiesPage{
     /* min-height:100vh; */
+    /* width: 100%; */
 }
 .desktopCase{
     display:flex;
@@ -366,51 +374,33 @@
     color:var(--tertiary-color);
     font-family: "WorkSans","SansSerif";
 }
-
-.card1{
-    width:400px;
-    height:400px;
+.case-card {
+    width: 100%;
+    height: 400px;
     background-color: #faead3;
-    /* background-image: url('/case studies/tabImage.png'); */
     border-radius: 30px;
-    
+}
+.card1{
+    background-image: url('/case studies/tabImage.png');    
 }
 .card2{
-    width:400px;
-    height:400px;
     background-image: url('/case studies/computer.png');
-    border-radius: 30px;
-    /* border:1px solid white */
-    
 }
 .card3{
-    width:400px;
-    height:400px;
     background-color: #515151;
     background-image: url('/case studies/shortflix_clay_1.png');
     background-size: cover;
-    border-radius: 30px;
-    
 }
 .card4{
-    width:400px;
-    height:400px;
     background-image: url('/case studies/transport.png');
-    border-radius: 30px;
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-position: center center; */
-    
 }
 .card5{
-    width:400px;
-    height:400px;
     background-image: url('/case studies/music.png');
-    border-radius: 30px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    border-bottom-right-radius: 20px;
 }
 .arrow {
     border:  solid var(--primary-color) ;
@@ -456,15 +446,15 @@
 .card1Image1{
 display:flex;
 }
-.cardContainer1:hover .card1Image1{
+/* .cardContainer1:hover .card1Image1{
     display:none;
-}
+} */
 .card1ImageZoom1{
     display:none;
 }
-.cardContainer1:hover .card1ImageZoom1{
+/* .cardContainer1:hover .card1ImageZoom1{
     display:flex;
-}
+} */
 .cardContainer1:hover{
     cursor: pointer;
 }

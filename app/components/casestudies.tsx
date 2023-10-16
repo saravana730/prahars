@@ -25,29 +25,29 @@ export default function CaseStudies(){
     return(
         <div className={`scroll-animationPortfolio ${isVisible ? '' : ''}`}  id="Casestudies">
             <div className='desktopCase'>
-            <div className="flex caseStudiesPage flex-col pt-16 pb-16">
-                <div className="flex pl-8 pr-8 flex-row md:gap-12">
-                    <div className="flex flex-col md:gap-6 cardContainer1">
+            <div className="flex caseStudiesPage flex-col pt-16 pb-16 w-full">
+                <div className="flex pl-8 pr-8 flex-row md:gap-12 w-full">
+                    <div className="flex flex-col md:gap-6 cardContainer1 card-container">
                         <div className="flex flex-col ">
                             <div className="caseTitle1">We Let <span className="caseTitle2">Our Work</span></div>
                             <div className="caseTitle3">Speak for itself. </div>
                         </div>
-                        <div className="card1">
-                            <div><img src="case studies/tabImage.png" className='card1Image1'/></div>
-                            <div><img src="case studies/tabZoom.png" className='card1ImageZoom1'/></div>
+                        <div className="card1 case-card">
+                            {/* <div><img src="case studies/tabImage.png" className='card1Image1'/></div>
+                            <div><img src="case studies/tabZoom.png" className='card1ImageZoom1'/></div> */}
                         </div>
                         <div className="cardTitle1">G-GADGETS</div>
                         <div className="cardContent1">Traffic increased by 29.16%</div>
                         <div className='caseBox'> View Case Study <div className='arrow right'></div></div>
                     </div>
-                    <div className='flex flex-col md:gap-6 pt-20'>
-                        <div className="card2"></div>
+                    <div className='flex flex-col md:gap-6 pt-20 card-container'>
+                        <div className="card2 case-card"></div>
                         <div className="cardTitle1">SMV BUSINESS SOLUTIONS</div>
                         <div className="cardContent1">6 Sign-ups in a Month</div>
                         <div className='caseBox'> View Case Study <div className='arrow right'></div></div>
                     </div>
-                    <div className='flex flex-col md:gap-6 pt-2'>
-                        <div className="card3 justify-center"></div>
+                    <div className='flex flex-col md:gap-6 pt-2 card-container'>
+                        <div className="card3 justify-center case-card"></div>
                         <div className="cardTitle1">SHORTFLIX</div>
                         <div className="cardContent1">Avg cost per download - 14 per Download</div>
                         <div className='caseBox'> View Case Study <div className='arrow right'></div></div>
@@ -75,7 +75,7 @@ export default function CaseStudies(){
 
             <div className='mobileCase'>
             <div className="flex justify-center items-center">
-                <div className="flex caseStudiesPage flex-col pt-16 pb-16">
+                <div className="flex caseStudiesPage flex-col pt-16 pb-16 w-full">
                 {/* <div className="flex pl-8 pr-8 flex-row md:gap-12"> */}
                     <div className="flex flex-col md:gap-6 cardContainer1">
                         <div className="flex flex-col ">
@@ -83,10 +83,10 @@ export default function CaseStudies(){
                             <div className="caseTitle3">Speak for itself. </div>
                         </div>
                     </div>
-                    <div className="flex flex-col md:gap-6 pt-20">
-                        <div className="card1">
-                            <div><img src="case studies/tabImage.png" className='card1Image1'/></div>
-                            <div><img src="case studies/tabZoom.png" className='card1ImageZoom1'/></div>
+                    <div className="flex flex-col md:gap-6 pt-20 card-container-mobile">
+                        <div className="card1 case-card">
+                            {/* <div><img src="case studies/tabImage.png" className='card1Image1'/></div>
+                            <div><img src="case studies/tabZoom.png" className='card1ImageZoom1'/></div> */}
                         </div>
                         <div className="cardTitle1 pt-4">G-GADGETS</div>
                         <div className="cardContent1 pt-4">Traffic increased by 29.16%</div>
@@ -94,16 +94,16 @@ export default function CaseStudies(){
                             <div className='caseBox'> View Case Study <div className='arrow right'></div></div> 
                         </div>
                     </div>    
-                    <div className='flex flex-col md:gap-6 pt-20'>
-                        <div className="card2"></div>
+                    <div className='flex flex-col md:gap-6 pt-20 card-container-mobile'>
+                        <div className="card2 case-card"></div>
                         <div className="cardTitle1 pt-4">SMV BUSINESS SOLUTIONS</div>
                         <div className="cardContent1 pt-4">6 Sign-ups in a Month</div>
                         <div className="md: pt-4">
                             <div className='caseBox'> View Case Study <div className='arrow right'></div></div> 
                         </div>
                     </div>
-                    <div className='flex flex-col md:gap-6 pt-20'>
-                        <div className="card3 justify-center"></div>
+                    <div className='flex flex-col md:gap-6 pt-20 card-container-mobile'>
+                        <div className="card3 justify-center case-card"></div>
                         <div className="cardTitle1 pt-4">SHORTFLIX</div>
                         <div className="cardContent1 pt-4">Avg cost per download - 14 per Download</div>
                         <div className="md: pt-4">
