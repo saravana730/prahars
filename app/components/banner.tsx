@@ -11,7 +11,7 @@ export default function Banner(){
                     generation made<br />
                     <p className="Simple"></p>
                     <div className="subtitle">
-                        <p>forging your <span style={{color:"#df0070"}}>winning</span> digital presence</p>
+                        <p>forging your <span className="banner-text-highlight">winning</span> digital presence</p>
                     </div>
                 </div>
             </div>
@@ -21,7 +21,7 @@ export default function Banner(){
                     generation made<br />
                     <p className="Simple"></p>
                     <div className="subtitle">
-                        <p>forging your <span style={{color:"#df0070"}}>winning</span> digital presence</p>
+                        <p>forging your <span className="banner-text-highlight">winning</span> digital presence</p>
                     </div>
                 </div>
             </div>
