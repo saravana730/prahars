@@ -129,134 +129,70 @@ body{
     font-weight: bold;
     font-family:"WorkSans","SansSerif";
 }
-
-.border_ice_courier_mobile{
+.client-item-mobile {
     height: 80px;
-    width: 220px;
-    background-image: url('/clients/IMG_1729.PNG');
-    background-size: contain;
+    width: 45%;
     background-repeat: no-repeat;
     background-position: center;
     border: 0.1rem solid #e4e4e4;
     border-radius: 20px;
+}
+
+.border_ice_courier_mobile{
+    background-image: url('/clients/IMG_1729.PNG');
+    background-size: contain;
 }
 
 .border_insight_consulting_mobile{
-    height: 80px;
-    width: 220px;
     background-image: url('/clients/IMG_1917.PNG');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 0.1rem solid #e4e4e4;
-    border-radius: 20px;
+    background-size: contain;
 }
 
 .border_kad_construction_mobile{
-    height: 80px;
-    width: 220px;
     background-image: url('/clients/IMG_1973.PNG');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 0.1rem solid #e4e4e4;
-    border-radius: 20px;
+    background-size: contain;
 }
 
 .border_vd_mobile{
-    height: 80px;
-    width: 220px;
     background-image: url('/clients/IMG_2012-removebg-preview.png');
     background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 0.1rem solid #e4e4e4;
-    border-radius: 20px;
 }
 
 .border_saadhaga_paravaigal_mobile {
-    height: 80px;
-    width: 220px;
     background-image: url('/clients/IMG_2043.PNG');
     background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 0.1rem solid #e4e4e4;
-    border-radius: 20px; 
 }
 
 .border_aruvadai_mobile {
-    height: 80px;
-    width: 220px;
     background-image: url('/clients/IMG_2064.PNG');
     background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 0.1rem solid #e4e4e4;
-    border-radius: 20px; 
 }
 
 .border_glimmerwood_mobile {
-    height: 80px;
-    width: 220px;
     background-image: url('/clients/IMG_2066.PNG');
     background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 0.1rem solid #e4e4e4;
-    border-radius: 20px; 
 }
 
 .border_anandan_digital_mobile {
-    height: 80px;
-    width: 220px;
     background-image: url('/clients/IMG_2068.PNG');
     background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 0.1rem solid #e4e4e4;
-    border-radius: 20px; 
 }
 
 .border_shortflix_mobile {
-    height: 80px;
-    width: 220px;
     background-image: url('/clients/IMG_2070.JPG');
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 0.1rem solid #e4e4e4;
-    border-radius: 20px; 
 }
 .border_musictube_mobile {
-    height: 80px;
-    width: 220px;
     background-image: url('/clients/IMG_2071.JPG');
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 0.1rem solid #e4e4e4;
-    border-radius: 20px; 
 }
 .border_unidesigns_mobile {
-    height: 80px;
-    width: 220px;
     background-image: url('/clients/IMG_2073.PNG');
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 0.1rem solid #e4e4e4;
-    border-radius: 20px; 
 }
 .border_suryamithran_mobile {
-    height: 80px;
-    width: 220px;
     background-image: url('/clients/IMG_2075.PNG');
     background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 0.1rem solid #e4e4e4;
-    border-radius: 20px; 
 }
 
 .clientContainer{

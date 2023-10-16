@@ -196,7 +196,7 @@
     font-family: "WorkSans","SansSerif";
 }
 .Simple:before{
-    content: 'Simple';
+    content: 'simple';
     color: var(--primary-color);
     font-weight: bold;
     font-size: 6rem;
@@ -242,6 +242,9 @@
     color: var(--tertiary-color);
     font-size: 3rem;
     font-family: "SourceSansPro","SansSerif";
+}
+.banner-text-highlight {
+    color: var(--primary-color);
 }
 /* -------------------------- Services ----------------------------- */
 
@@ -655,133 +658,70 @@ display:flex;
     width: 100%;
 }
 
-.border_ice_courier{
-    height: 100px;
-    width: 276px;
-    background-image: url('/clients/IMG_1729.PNG');
-    background-size: contain;
-    background-repeat: no-repeat;
+.client-item {
+    height: 120px;
+    width: 100%;
     background-position: center;
+    background-repeat: no-repeat;    
     border: 0.1rem solid #e4e4e4;
     border-radius: 20px;
+}
+
+.border_ice_courier{
+    background-image: url('/clients/IMG_1729.PNG');
+    background-size: contain;
 }
 
 .border_insight_consulting{
-    height: 100px;
-    width: 276px;
     background-image: url('/clients/IMG_1917.PNG');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 0.1rem solid #e4e4e4;
-    border-radius: 20px;
+    background-size: contain;
 }
 
 .border_kad_construction{
-    height: 100px;
-    width: 276px;
     background-image: url('/clients/IMG_1973.PNG');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 0.1rem solid #e4e4e4;
-    border-radius: 20px;
+    background-size: contain;
 }
 
 .border_vd{
-    height: 100px;
-    width: 276px;
     background-image: url('/clients/IMG_2012-removebg-preview.png');
     background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 0.1rem solid #e4e4e4;
-    border-radius: 20px;
 }
 
 .border_saadhaga_paravaigal {
-    height: 100px;
-    width: 276px;
     background-image: url('/clients/IMG_2043.PNG');
     background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 0.1rem solid #e4e4e4;
-    border-radius: 20px; 
 }
 
 .border_aruvadai {
-    height: 100px;
-    width: 276px;
     background-image: url('/clients/IMG_2064.PNG');
     background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 0.1rem solid #e4e4e4;
-    border-radius: 20px; 
 }
 
 .border_glimmerwood {
-    height: 100px;
-    width: 276px;
     background-image: url('/clients/IMG_2066.PNG');
     background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 0.1rem solid #e4e4e4;
-    border-radius: 20px; 
 }
 
 .border_anandan_digital {
-    height: 100px;
-    width: 276px;
     background-image: url('/clients/IMG_2068.PNG');
     background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 0.1rem solid #e4e4e4;
-    border-radius: 20px; 
 }
 
 .border_shortflix {
-    height: 100px;
-    width: 276px;
     background-image: url('/clients/IMG_2070.JPG');
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 0.1rem solid #e4e4e4;
-    border-radius: 20px; 
 }
 .border_musictube {
-    height: 100px;
-    width: 276px;
     background-image: url('/clients/IMG_2071.JPG');
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 0.1rem solid #e4e4e4;
-    border-radius: 20px; 
 }
 .border_unidesigns {
-    height: 100px;
-    width: 276px;
     background-image: url('/clients/IMG_2073.PNG');
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 0.1rem solid #e4e4e4;
-    border-radius: 20px; 
 }
 .border_suryamithran {
-    height: 100px;
-    width: 276px;
     background-image: url('/clients/IMG_2075.PNG');
     background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    border: 0.1rem solid #e4e4e4;
-    border-radius: 20px; 
 }
 
 
