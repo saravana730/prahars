@@ -336,7 +336,7 @@ body{
     display: none;
 }
 .mobileBlog {
-    display: flex;
+    display: contents;
 }
 .bg_image_1_mobile {
     height: 600px;
@@ -346,5 +346,19 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     border: 0.1rem solid #e4e4e4; 
+}
+
+/* -------------------------------- Blogs Inner Page ----------------------- */
+.desktopBlogInnerPage{
+    display: none;
+}
+.mobileBlogInnerPage {
+    display: flex;
+}
+.background_img {
+    height: 300px;
+    width: 70%;
+    background-image: url("/blog/thumbnail (3).png");
+    background-size: contain;
 }
 }

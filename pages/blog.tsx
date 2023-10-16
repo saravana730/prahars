@@ -8,6 +8,7 @@ import Navbar from '@/app/components/navbar';
 // import sheet from '/blog/news.png';
 // import profile from '/blog/owner.png';
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 
 export default function Blogs() {
@@ -43,13 +44,15 @@ export default function Blogs() {
                                         <div className="row">
                                             <div className="col">
                                                 <div className="bg_image_1"></div>
-                                                    <div className="blog_title">Paid Marketing Vs Affiliate Marketing Vs</div>
+                                                    <div className="blog_title">Paid Marketing Vs Affiliate Marketing</div>
                                                         <div className="blog_desc">Paid marketing and affiliate marketing are two of the<br/> most popular ways to promote products and services<br/> online.</div>
                                                             {/* <button className="outlined-button_blog"> */}
-                                                                <div className="read_more_justify">
-                                                                    <div className="read_more_row">Read More</div>
-                                                                    <div className="read_more_arrow"><Image src={forward_arrow} alt='>' width={20} height={20} /></div>
-                                                                </div>
+                                                                    <div className="read_more_justify">
+                                                                        <div>
+                                                                            <a className="yourAnchorClassName read_more_row" href="/blog_innerpage">Read More</a>
+                                                                        </div>
+                                                                        <div className="read_more_arrow"><Image src={forward_arrow} alt='>' width={20} height={20} /></div>
+                                                                    </div>
                                                             {/* </button> */}
                                             </div>
                                             <div className="right_side_blog">
@@ -61,8 +64,11 @@ export default function Blogs() {
                                                             your brand.
                                                             </div>
                                                             <div className="read_more_justify">
-                                                                <div className="read_more_row">Read More</div>
+                                                                <div>
+                                                                    <a className="yourAnchorClassName read_more_row" href="/blog_innerpage">Read More</a>
+                                                                </div>
                                                                 <div className="read_more_arrow"><Image src={forward_arrow} alt='>' width={20} height={20} /></div>
+                                                                {/* <a href='/blog_innerpage'></a> */}
                                                             </div>
                                                 </div>
                                             </div>
