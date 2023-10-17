@@ -110,19 +110,21 @@ export default function Clients() {
                         <div className="justify-center">
                             <div className="clientsTitle1_mobile whitespace-nowrap">Our Happy <span className="clientsTitle2_mobile">Customers</span></div>
                         </div>
-                        <div className="flex flex-wrap flex-row gap-2 justify-between">
-                            <div className="border_ice_courier_mobile client-item-mobile"></div>
-                            <div className="border_insight_consulting_mobile client-item-mobile"></div>
-                            <div className="border_kad_construction_mobile client-item-mobile"></div>
-                            <div className="border_vd_mobile client-item-mobile"></div>
-                            <div className="border_aruvadai_mobile client-item-mobile"></div>
-                            <div className="border_saadhaga_paravaigal_mobile client-item-mobile"></div>
-                            <div className="border_glimmerwood_mobile client-item-mobile"></div>
-                            <div className="border_anandan_digital_mobile client-item-mobile"></div>
-                            <div className="border_suryamithran_mobile client-item-mobile"></div>
-                            <div className="border_unidesigns_mobile client-item-mobile"></div>
-                            <div className="border_musictube_mobile client-item-mobile"></div>
-                            <div className="border_shortflix_mobile client-item-mobile"></div>
+                        <div className="clients_list_padding">
+                            <div className="flex flex-wrap flex-row gap-2 justify-between">
+                                <div className="border_ice_courier_mobile client-item-mobile"></div>
+                                <div className="border_insight_consulting_mobile client-item-mobile"></div>
+                                <div className="border_kad_construction_mobile client-item-mobile"></div>
+                                <div className="border_vd_mobile client-item-mobile"></div>
+                                <div className="border_aruvadai_mobile client-item-mobile"></div>
+                                <div className="border_saadhaga_paravaigal_mobile client-item-mobile"></div>
+                                <div className="border_glimmerwood_mobile client-item-mobile"></div>
+                                <div className="border_anandan_digital_mobile client-item-mobile"></div>
+                                <div className="border_suryamithran_mobile client-item-mobile"></div>
+                                <div className="border_unidesigns_mobile client-item-mobile"></div>
+                                <div className="border_musictube_mobile client-item-mobile"></div>
+                                <div className="border_shortflix_mobile client-item-mobile"></div>
+                            </div>
                         </div>
                     </div>
                 </div>

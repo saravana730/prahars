@@ -378,6 +378,8 @@
     font-family: "WorkSans","SansSerif";
 }
 .case-card {
+    padding-left: 10%;
+    padding-right: 10%;
     width: 100%;
     height: 400px;
     background-color: #faead3;
@@ -805,6 +807,9 @@ display:flex;
 /* ------------------------- Blogs ------------------------ */
 .blog_padding_page {
     padding-top: 40px;
+}
+.blogging{
+    display:none;
 }
 
 .blog_padding_page_title {

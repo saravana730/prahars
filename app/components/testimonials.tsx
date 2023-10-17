@@ -168,57 +168,59 @@ export default function Testimonials(): React.JSX.Element{
             </div>
 
             <div className="mobileTestimonials">
-                <div className={`scroll-animationPortfolio ${isVisible ? '' : ''}`}>
-                <div className='flex flex-col pt-4 pb-4 pl-10'>
-                    <div className='testimonialTitle1 font-extrabold'><span className='testimonialTitle2'>Clients love us</span>, but</div>
-                    <div className='testimonialTitle1 font-extrabold'>don’t take our word</div>
-                    <div className='testimonialTitle1 font-extrabold'>for it.</div>
-                </div>
-                <div className='testimonialsContent '>
-                    <div className=' flex flex-row md:gap-4 pt-6 pl-10'>
-                        <div className="testimonialContent">Prahars Review</div>
+                <div className="testimonial_top_padding">
+                    <div className={`scroll-animationPortfolio ${isVisible ? '' : ''}`}>
+                    <div className='flex flex-col pt-4 pb-4 pl-10'>
+                        <div className='testimonialTitle1 font-extrabold'><span className='testimonialTitle2'>Clients love us</span>, but</div>
+                        <div className='testimonialTitle1 font-extrabold'>don’t take our word</div>
+                        <div className='testimonialTitle1 font-extrabold'>for it.</div>
                     </div>
-                    <div className=' flex flex-row md:gap-4 pt-6 pl-10'>
-                        <div className='flex flex-row pt-1'>
-                            
-                                    <div className="testimonialContent">4.5</div>
-                                    <div><img src="starFilled.png" className='w-6'/></div>
-                                    <div><img src="starFilled.png" className='w-6'/></div>
-                                    <div><img src="starFilled.png" className='w-6'/></div>
-                                    <div><img src="starFilled.png" className='w-6'/></div>
-                                    <div><img src="starHalf.png" className='w-6'/></div>
+                    <div className='testimonialsContent '>
+                        <div className=' flex flex-row md:gap-4 pt-6 pl-10'>
+                            <div className="testimonialContent">Prahars Review</div>
                         </div>
-                    </div>
-                    <div className='pl-8 pr-8'>
-                    <Slider {...settings_mobile}> 
-                    
-                    {testimonials.map((item) => (
-                    <div key={item.id} className="pt-8">
-                    <div className='flex flex-col items-center justify-center'>
-                        <div className='testimonialContainer_mobile'>
-                            <div className='flex flex-row md:gap-2'>
-                                <div className='testCompanyValue'>{item.rating}</div>
-                                <div className='flex flex-row '>
-                                    <div><img src="starFilled.png" className='w-6'/></div>
-                                    <div><img src="starFilled.png" className='w-6'/></div>
-                                    <div><img src="starFilled.png" className='w-6'/></div>
-                                    <div><img src="starFilled.png" className='w-6'/></div>
-                                    <div><img src="starHalf.png" className='w-6'/></div>
-                                </div>
+                        <div className=' flex flex-row md:gap-4 pt-6 pl-10'>
+                            <div className='flex flex-row pt-1'>
+                                
+                                        <div className="testimonialContent">4.5</div>
+                                        <div><img src="starFilled.png" className='w-6'/></div>
+                                        <div><img src="starFilled.png" className='w-6'/></div>
+                                        <div><img src="starFilled.png" className='w-6'/></div>
+                                        <div><img src="starFilled.png" className='w-6'/></div>
+                                        <div><img src="starHalf.png" className='w-6'/></div>
                             </div>
-                            <div className='flex flex-wrap testCompanyContent '>{item.content}</div>
-                            <div className='testCompanyName '>{item.companyName}</div>
                         </div>
-                        <div className=""> {item.id}  of  9 </div>
-                        <div className="custom-arrow custom-arrow-left"></div>
-                        <div className="custom-arrow custom-arrow-right"></div>
-                        <div className=""></div>
+                        <div className='pl-8 pr-8'>
+                        <Slider {...settings_mobile}> 
+                        
+                        {testimonials.map((item) => (
+                        <div key={item.id} className="pt-8">
+                        <div className='flex flex-col items-center justify-center'>
+                            <div className='testimonialContainer_mobile'>
+                                <div className='flex flex-row md:gap-2'>
+                                    <div className='testCompanyValue'>{item.rating}</div>
+                                    <div className='flex flex-row '>
+                                        <div><img src="starFilled.png" className='w-6'/></div>
+                                        <div><img src="starFilled.png" className='w-6'/></div>
+                                        <div><img src="starFilled.png" className='w-6'/></div>
+                                        <div><img src="starFilled.png" className='w-6'/></div>
+                                        <div><img src="starHalf.png" className='w-6'/></div>
+                                    </div>
+                                </div>
+                                <div className='flex flex-wrap testCompanyContent '>{item.content}</div>
+                                <div className='testCompanyName '>{item.companyName}</div>
+                            </div>
+                            <div className=""> {item.id}  of  9 </div>
+                            <div className="custom-arrow custom-arrow-left"></div>
+                            <div className="custom-arrow custom-arrow-right"></div>
+                            <div className=""></div>
+                        </div>
+                        </div>
+                        ))}
+                        </Slider>
+                        </div>
                     </div>
                     </div>
-                    ))}
-                    </Slider>
-                    </div>
-                </div>
                 </div>
             </div>
         </div>

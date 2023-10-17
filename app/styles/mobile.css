@@ -9,7 +9,7 @@ body{
 
 .LandingPage{
     
-    min-height:100vh;
+    min-height: 100vh;
 }
 
 .mobileBanner{
@@ -22,20 +22,20 @@ body{
 .banner{
     display:none ;
 }
-.bannercontents{
+/* .bannercontents{
     font-size: 3.5rem;
-}
+} */
 .banner_padding_mobile {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 200px;
+    padding-top: 225px;
 }
 .bannercontents{
     color: var(--tertiary-color);
     font-weight: bold;
     font-size: 2.4rem;
-    line-height: 1;
+    line-height: 1.5;
     font-family: "WorkSans","SansSerif";
 }
 .subtitle_mobile{
@@ -195,6 +195,10 @@ body{
     color:var(--tertiary-color);
     font-family: "WorkSans","SansSerif";
 }
+.card_center {
+    margin: 0 auto; /* Center the card horizontally */
+    text-align: center; /* Center the card content horizontally */
+}
 /* ------------------------------ Clients ------------------------- */
 
 .desktopClients {
@@ -235,7 +239,9 @@ body{
     border: 0.1rem solid var(--case-border-color);
     border-radius: 20px;
 }
-
+.clients_list_padding{
+    padding-top: 50px;
+}
 .border_ice_courier_mobile{
     background-image: url('/clients/IMG_1729.PNG');
     background-size: contain;
@@ -308,7 +314,9 @@ body{
 .mobileServices{
     display:flex;
 }
-
+.services_top_padding {
+    padding-top: 45%;
+}
 .our_services_mobile{
     font-weight: bold;
     font-family:"SourceSansPro","SansSerif";
@@ -367,6 +375,9 @@ body{
     display:flex;
 }
 /* ---------------------------- Testimonials ------------------------- */
+.testimonial_top_padding {
+    padding-top: 45%;
+}
 .desktopTestimonials {
     display: none;
 }
@@ -448,13 +459,22 @@ body{
     font-family:var(--primary-font);
     color:var(--white-color);
 }
+
 /* --------------------------------- Blogs ------------------------------ */
+.innerpage_title{
+    color:aqua
+}
+.mobileBlog {
+    /* display: flex; */
+}
+.blogging{
+    display:flex;
+}
+
 .desktopBlog{
     display: none;
 }
-.mobileBlog {
-    display: contents;
-}
+
 .bg_image_1_mobile {
     height: 600px;
     width: 100%;

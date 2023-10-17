@@ -131,7 +131,6 @@ export default function Services(){
                             </div>
                         </div>
                     </div>
-                    <div className="empty_box"></div>
                     <div className="design_deploy">
                         <div className="flex flex-row justify-center">
                             <div className="flex flex-col">
@@ -159,99 +158,101 @@ export default function Services(){
 
 
         <div className="mobileServices">
-            <div className="flex flex-col">
-                <div className="our_services_mobile">OUR SERVICES</div>
-                <div className="for_us_padding">
-                    <div className="for_us_mobile">For us, this is all in</div>
-                    <div className="for_us_mobile"><span style={{color:"#df0070"}}>a day's work.</span></div>
-                </div>
-                <div className="branding_padding">
-                    <div className="flex flex-row">
-                        <div className="branding_img_padding"><Image src={sample_img_1} alt={"png"} width={30} height={30}/></div>
-                        <div className="branding_title_mobile">Branding</div>
+            <div className="services_top_padding">
+                <div className="flex flex-col">
+                    <div className="our_services_mobile">OUR SERVICES</div>
+                    <div className="for_us_padding">
+                        <div className="for_us_mobile">For us, this is all in</div>
+                        <div className="for_us_mobile"><span style={{color:"#df0070"}}>a day's work.</span></div>
                     </div>
-                <div className="flex flex-row md: gap-4">
-                    <div className="branding_content_plus_mobile">+</div>
-                    <div className="branding_content_mobile">Market Research</div>
-                </div>
-                <div className="flex flex-row md: gap-4">
-                    <div className="branding_content_plus_mobile">+</div>
-                    <div className="branding_content_mobile">Brand Positioning</div>
-                </div>
-                <div className="flex flex-row md: gap-4">
-                    <div className="branding_content_plus_mobile">+</div>
-                    <div className="branding_content_mobile">Brand Identity Design</div>
-                </div>
-                <div className="flex flex-row md: gap-4">
-                    <div className="branding_content_plus_mobile">+</div>
-                    <div className="branding_content_mobile">Brand Collateral Design</div>
-                </div>
-                <div className="flex flex-row md: gap-4">
-                    <div className="branding_content_plus_mobile">+</div>
-                    <div className="branding_content_mobile">Branding for Startups</div>
-                </div>
-                <div className="flex flex-row md: gap-4">
-                    <div className="branding_content_plus_mobile">+</div>
-                    <div className="branding_content_mobile">Corporate Branding</div>
-                </div>
-                <div className="flex flex-row md: gap-4">
-                    <div className="branding_content_plus_mobile">+</div>
-                    <div className="branding_content_mobile">Product Branding</div>
-                </div>
-                </div>
+                    <div className="branding_padding">
+                        <div className="flex flex-row">
+                            <div className="branding_img_padding"><Image src={sample_img_1} alt={"png"} width={30} height={30}/></div>
+                            <div className="branding_title_mobile">Branding</div>
+                        </div>
+                    <div className="flex flex-row md: gap-4">
+                        <div className="branding_content_plus_mobile">+</div>
+                        <div className="branding_content_mobile">Market Research</div>
+                    </div>
+                    <div className="flex flex-row md: gap-4">
+                        <div className="branding_content_plus_mobile">+</div>
+                        <div className="branding_content_mobile">Brand Positioning</div>
+                    </div>
+                    <div className="flex flex-row md: gap-4">
+                        <div className="branding_content_plus_mobile">+</div>
+                        <div className="branding_content_mobile">Brand Identity Design</div>
+                    </div>
+                    <div className="flex flex-row md: gap-4">
+                        <div className="branding_content_plus_mobile">+</div>
+                        <div className="branding_content_mobile">Brand Collateral Design</div>
+                    </div>
+                    <div className="flex flex-row md: gap-4">
+                        <div className="branding_content_plus_mobile">+</div>
+                        <div className="branding_content_mobile">Branding for Startups</div>
+                    </div>
+                    <div className="flex flex-row md: gap-4">
+                        <div className="branding_content_plus_mobile">+</div>
+                        <div className="branding_content_mobile">Corporate Branding</div>
+                    </div>
+                    <div className="flex flex-row md: gap-4">
+                        <div className="branding_content_plus_mobile">+</div>
+                        <div className="branding_content_mobile">Product Branding</div>
+                    </div>
+                    </div>
 
-                <div className="branding_padding">
-                    <div className="flex flex-row">
-                        <div className="branding_img_padding"><Image src={sample_img_2} alt={"png"} width={30} height={30}/></div>
-                        <div className="branding_title_mobile">Advertising and Marketing</div>
+                    <div className="branding_padding">
+                        <div className="flex flex-row">
+                            <div className="branding_img_padding"><Image src={sample_img_2} alt={"png"} width={30} height={30}/></div>
+                            <div className="branding_title_mobile">Advertising and Marketing</div>
+                        </div>
+                    <div className="flex flex-row md: gap-4">
+                        <div className="branding_content_plus_mobile">+</div>
+                        <div className="branding_content_mobile">Performance Marketing</div>
                     </div>
-                <div className="flex flex-row md: gap-4">
-                    <div className="branding_content_plus_mobile">+</div>
-                    <div className="branding_content_mobile">Performance Marketing</div>
-                </div>
-                <div className="flex flex-row md: gap-4">
-                    <div className="branding_content_plus_mobile">+</div>
-                    <div className="branding_content_mobile">Digital Marketing</div>
-                </div>
-                <div className="flex flex-row md: gap-4">
-                    <div className="branding_content_plus_mobile">+</div>
-                    <div className="branding_content_mobile">LinkedIn Marketing</div>
-                </div>
-                <div className="flex flex-row md: gap-4">
-                    <div className="branding_content_plus_mobile">+</div>
-                    <div className="branding_content_mobile">Meta Marketing</div>
-                </div>
-                <div className="flex flex-row md: gap-4">
-                    <div className="branding_content_plus_mobile">+</div>
-                    <div className="branding_content_mobile">Google Ads</div>
-                </div>
-                <div className="flex flex-row md: gap-4">
-                    <div className="branding_content_plus_mobile">+</div>
-                    <div className="branding_content_mobile">SEO/SEM Services</div>
-                </div>
-                <div className="flex flex-row md: gap-4">
-                    <div className="branding_content_plus_mobile">+</div>
-                    <div className="branding_content_mobile">Social Media Marketing</div>
-                </div>
-                </div>
+                    <div className="flex flex-row md: gap-4">
+                        <div className="branding_content_plus_mobile">+</div>
+                        <div className="branding_content_mobile">Digital Marketing</div>
+                    </div>
+                    <div className="flex flex-row md: gap-4">
+                        <div className="branding_content_plus_mobile">+</div>
+                        <div className="branding_content_mobile">LinkedIn Marketing</div>
+                    </div>
+                    <div className="flex flex-row md: gap-4">
+                        <div className="branding_content_plus_mobile">+</div>
+                        <div className="branding_content_mobile">Meta Marketing</div>
+                    </div>
+                    <div className="flex flex-row md: gap-4">
+                        <div className="branding_content_plus_mobile">+</div>
+                        <div className="branding_content_mobile">Google Ads</div>
+                    </div>
+                    <div className="flex flex-row md: gap-4">
+                        <div className="branding_content_plus_mobile">+</div>
+                        <div className="branding_content_mobile">SEO/SEM Services</div>
+                    </div>
+                    <div className="flex flex-row md: gap-4">
+                        <div className="branding_content_plus_mobile">+</div>
+                        <div className="branding_content_mobile">Social Media Marketing</div>
+                    </div>
+                    </div>
 
-                <div className="branding_padding">
-                    <div className="flex flex-row">
-                        <div className="branding_img_padding"><Image src={sample_img_3} alt={"png"} width={30} height={30}/></div>
-                        <div className="branding_title_mobile">Design and Deployment</div>
+                    <div className="branding_padding">
+                        <div className="flex flex-row">
+                            <div className="branding_img_padding"><Image src={sample_img_3} alt={"png"} width={30} height={30}/></div>
+                            <div className="branding_title_mobile">Design and Deployment</div>
+                        </div>
+                    <div className="flex flex-row md: gap-4">
+                        <div className="branding_content_plus_mobile">+</div>
+                        <div className="branding_content_mobile">Bespoke Website Design</div>
                     </div>
-                <div className="flex flex-row md: gap-4">
-                    <div className="branding_content_plus_mobile">+</div>
-                    <div className="branding_content_mobile">Bespoke Website Design</div>
-                </div>
-                <div className="flex flex-row md: gap-4">
-                    <div className="branding_content_plus_mobile">+</div>
-                    <div className="branding_content_mobile">CMS (WordPress) Based Website</div>
-                </div>
-                <div className="flex flex-row md: gap-4">
-                    <div className="branding_content_plus_mobile">+</div>
-                    <div className="branding_content_mobile">E-Commerce Website (WooCommerce & Shopify)</div>
-                </div>
+                    <div className="flex flex-row md: gap-4">
+                        <div className="branding_content_plus_mobile">+</div>
+                        <div className="branding_content_mobile">CMS (WordPress) Based Website</div>
+                    </div>
+                    <div className="flex flex-row md: gap-4">
+                        <div className="branding_content_plus_mobile">+</div>
+                        <div className="branding_content_mobile">E-Commerce Website (WooCommerce & Shopify)</div>
+                    </div>
+                    </div>
                 </div>
             </div>
         </div>
