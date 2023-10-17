@@ -49,7 +49,7 @@ export default function Blogs() {
                                                             {/* <button className="outlined-button_blog"> */}
                                                                     <div className="read_more_justify">
                                                                         <div>
-                                                                            <a className="yourAnchorClassName read_more_row" href="/blog_innerpage">Read More</a>
+                                                                            <a className=" read_more_row" href="/blog_innerpage_1">Read More</a>
                                                                         </div>
                                                                         <div className="read_more_arrow"><Image src={forward_arrow} alt='>' width={20} height={20} /></div>
                                                                     </div>
@@ -65,7 +65,7 @@ export default function Blogs() {
                                                             </div>
                                                             <div className="read_more_justify">
                                                                 <div>
-                                                                    <a className="yourAnchorClassName read_more_row" href="/blog_innerpage">Read More</a>
+                                                                    <a className="read_more_row" href="/blog_innerpage_2">Read More</a>
                                                                 </div>
                                                                 <div className="read_more_arrow"><Image src={forward_arrow} alt='>' width={20} height={20} /></div>
                                                                 {/* <a href='/blog_innerpage'></a> */}

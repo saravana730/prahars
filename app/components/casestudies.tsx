@@ -79,8 +79,8 @@ export default function CaseStudies(){
                 {/* <div className="flex pl-8 pr-8 flex-row md:gap-12"> */}
                     <div className="flex flex-col md:gap-6 cardContainer1">
                         <div className="flex flex-col ">
-                            <div className="caseTitle1">We Let <span className="caseTitle2">Our Work</span></div>
-                            <div className="caseTitle3">Speak for itself. </div>
+                            <div className="caseTitle1_mobile">We Let <span className="caseTitle2_mobile">Our Work</span></div>
+                            <div className="caseTitle3_mobile">Speak for itself. </div>
                         </div>
                     </div>
                     <div className="flex flex-col md:gap-6 pt-20 card-container-mobile">

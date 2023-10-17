@@ -15,8 +15,11 @@ export default function BlogsInnerPage() {
                     {/* <div style={{display: "flex",justifyContent: "center", backgroundSize: "cover", paddingTop:"40px"}}>
                         <Image src="/blog/thumbnail (3).png" alt={"sampleImage"} width="700" height="450"/>
                     </div> */}
-                <div className="relative">
+                {/* <div className="relative">
                     <Image layout="responsive" width={700} height={200} alt="Alternate Image" src="/blog/thumbnail (3).png" />
+                </div> */}
+                <div className="image-container">
+                    <div className="image-container img"><Image src="/blog/thumbnail (3).png" alt="Description of the image" width={1000} height={667} /></div>
                 </div>
                 <div className="innerpage_content_padding">
                 <div className="blog_desc">
@@ -83,7 +86,10 @@ export default function BlogsInnerPage() {
 
             <div className="mobileBlogInnerPage">
                 <div className="innerpage_title">Paid Marketing Vs Affiliate Marketing</div>
-                <div style={{display: "flex", justifyContent:"center", backgroundSize:'contain', paddingTop:"40px"}}><div className="background_img"></div></div>
+                <div className="image-container_mobile">
+                    <div className="image-container img_mobile"><Image src="/blog/thumbnail (3).png" alt="Description of the image" width={1000} height={667} /></div>
+                </div>
+                {/* <div style={{display: "flex", justifyContent:"center", backgroundSize:'contain', paddingTop:"40px"}}><div className="background_img"></div></div> */}
                 <div className="innerpage_content_padding">
                 <div className="blog_desc">
                     <div className="blog_desc_innerpage">

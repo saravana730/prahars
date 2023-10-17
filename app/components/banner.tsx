@@ -16,6 +16,7 @@ export default function Banner(){
                 </div>
             </div>
             <div className= "mobileBanner">
+                <div className="banner_padding_mobile">
                 <div className="bannercontents">
                     Relevant digital lead 
                     generation made<br />
