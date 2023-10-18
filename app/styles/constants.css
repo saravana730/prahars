@@ -25,4 +25,20 @@
     --primary-font:'Source Sans Pro',sans-serif;
     --secondary-font: 'WorkSans',sans-serif;
 
+    /* Mobile Fonts */
+    --primary-font-mobile: 2.4rem;
+    --secondary-font-mobile: 1.8rem;
+    --tertiary-font-mobile: 1rem;
+    --servicesTitle-font-mobile: 2rem;
+    --servicesContent-font-mobile: 1.6rem;
+
+    /* Desktop Fonts*/
+    --homescreen-font-desktop: 6rem;
+    --primary-font-desktop: 3rem;
+    --secondary-font-desktop: 1.8rem;
+    --tertiary-font-desktop: 1rem;
+    --servicesTitle-font-desktop: 2rem;
+    --servicesContent-font-desktop: 1.6rem;
+
+
 }

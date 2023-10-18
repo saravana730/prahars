@@ -91,6 +91,28 @@ export default function Services(){
                                     <div><span className="branding_content_plus">+</span></div>
                                     <div className="branding_content">Product Branding</div>
                                 </div>
+
+
+                                <div className="design_deploy">
+                                    <div><Image src={sample_img_3} alt={"png"} width={50} height={50}/></div>
+                                    <div className="branding_title">Design and Deployment</div>
+                                <div className="flex flex-row md: gap-4">
+                                    {/* <div>Hello</div> */}
+                                    <div><span className="branding_content_plus">+</span></div>                                <div className="branding_content">Bespoke Website Design</div>
+                                </div>
+                                <div className="flex flex-row md: gap-4">
+                                    {/* <div>Hello</div> */}
+                                    <div><span className="branding_content_plus">+</span></div>                                <div className="branding_content">CMS(WordPress) Based Website</div>
+                                </div>
+                                <div className="flex flex-row md: gap-4">
+                                    {/* <div>Hello</div> */}
+                                    <div><span className="branding_content_plus">+</span></div>
+                                    <div className="branding_content">E-Commerce Website(WooCommerce and Shopify)</div>
+                                </div>
+                                </div>
+
+                                  
+
                             </div>
                         </div>
                         <div className="branding_padding">
@@ -131,27 +153,24 @@ export default function Services(){
                             </div>
                         </div>
                     </div>
-                    <div className="design_deploy">
+                    {/* <div className="design_deploy">
                         <div className="flex flex-row justify-center">
                             <div className="flex flex-col">
                             <div><Image src={sample_img_3} alt={"png"} width={50} height={50}/></div>
                                 <div className="branding_title">Design and Deployment</div>
                                 <div className="flex flex-row md: gap-4">
-                                    {/* <div>Hello</div> */}
                                     <div><span className="branding_content_plus">+</span></div>                                <div className="branding_content">Bespoke Website Design</div>
                                 </div>
                                 <div className="flex flex-row md: gap-4">
-                                    {/* <div>Hello</div> */}
                                     <div><span className="branding_content_plus">+</span></div>                                <div className="branding_content">CMS(WordPress) Based Website</div>
                                 </div>
                                 <div className="flex flex-row md: gap-4">
-                                    {/* <div>Hello</div> */}
                                     <div><span className="branding_content_plus">+</span></div>
                                     <div className="branding_content">E-Commerce Website(WooCommerce and Shopify)</div>
                                 </div>  
                             </div>
                         </div> 
-                    </div>               
+                    </div>                */}
                 </div>
             </div>
             
@@ -165,7 +184,7 @@ export default function Services(){
                         <div className="for_us_mobile">For us, this is all in</div>
                         <div className="for_us_mobile"><span style={{color:"#df0070"}}>a day's work.</span></div>
                     </div>
-                    <div className="branding_padding">
+                    <div className="branding_padding_mobile">
                         <div className="flex flex-row">
                             <div className="branding_img_padding"><Image src={sample_img_1} alt={"png"} width={30} height={30}/></div>
                             <div className="branding_title_mobile">Branding</div>
@@ -200,7 +219,7 @@ export default function Services(){
                     </div>
                     </div>
 
-                    <div className="branding_padding">
+                    <div className="branding_padding_mobile">
                         <div className="flex flex-row">
                             <div className="branding_img_padding"><Image src={sample_img_2} alt={"png"} width={30} height={30}/></div>
                             <div className="branding_title_mobile">Advertising and Marketing</div>
@@ -235,7 +254,7 @@ export default function Services(){
                     </div>
                     </div>
 
-                    <div className="branding_padding">
+                    <div className="branding_padding_mobile">
                         <div className="flex flex-row">
                             <div className="branding_img_padding"><Image src={sample_img_3} alt={"png"} width={30} height={30}/></div>
                             <div className="branding_title_mobile">Design and Deployment</div>

@@ -1,6 +1,7 @@
 'use client';
 import React from 'react';
 import '../app/styles/styles.css'
+import 'app/styles/mobile.css';
 import Image from 'next/image';
 import forward_arrow from "/public/blog/icons8-forward-100.png";
 import Navbar from '@/app/components/navbar';
@@ -93,7 +94,7 @@ export default function Blogs() {
                                         <div className="row">
                                             <div className="col">
                                                 <div className="bg_image_1"></div>
-                                                    <div className="blog_title">Paid Marketing  Affiliate Marketing</div>
+                                                    <div className="blog_title">Paid Marketing Vs Affiliate Marketing</div>
                                                         <div className="blog_desc">Paid marketing and affiliate marketing are two of the<br/> most popular ways to promote products and services<br/> online.</div>
                                                             {/* <button className="outlined-button_blog"> */}
                                                                 <div className="read_more_justify">
@@ -124,7 +125,7 @@ export default function Blogs() {
                     </div>
                     </div>
                 </div>
-                <div className='blogging'>
+                {/* <div className='blogging'>
                 <div className="blog_padding_page_title">
                         <div className="blog_page">
                         <div className="blog_content">
@@ -136,14 +137,12 @@ export default function Blogs() {
                                         <div className="row">
                                             <div className="col">
                                                 <div className="bg_image_1"></div>
-                                                    <div className="blog_title">rise of ekesh</div>
+                                                    <div className="blog_title">Paid Marketing Vs Affiliate Marketing</div>
                                                         <div className="blog_desc">Paid marketing and affiliate marketing are two of the<br/> most popular ways to promote products and services<br/> online.</div>
-                                                            {/* <button className="outlined-button_blog"> */}
                                                                 <div className="read_more_justify">
                                                                     <div className="read_more_row">Read More</div>
                                                                     <div className="read_more_arrow"><Image src={forward_arrow} alt='>' width={20} height={20} /></div>
                                                                 </div>
-                                                            {/* </button> */}
                                             </div>
                                             <div className="right_side_blog">
                                                 <div className="col">
@@ -166,7 +165,7 @@ export default function Blogs() {
                         </div>
                     </div>
                 </div>
-                </div>
+                </div> */}
         </div>    
     )
 }

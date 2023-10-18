@@ -33,6 +33,7 @@ export default function Footer(){
                         <div className="footerContainerContent1">READY TO LEVERAGE DIGITAL ?</div>
                         <div className="footerContainerContent2">Your Great <span className="footerContainerContent2-sub">Digital Marketing Service Awaits</span></div>
                         <div className="footerContainerContent3">Let’s discuss how <span className="footerContainerContent3-sub">Prahars</span> can help you grow your business.</div>
+                        {/* <div className="footerContainerContent3"></div> */}
                     </div>
                     </div>
                     <div className="pt-12 pb-12">
@@ -42,7 +43,7 @@ export default function Footer(){
                         <div className="flex flex-row justify-between ">    
                             <div className="flex flex-col items-center justify-center">
                                 <div className="footerImage"><img src="logoPrahars.png" className=""/></div>
-                                <div className="flex flex-row md:gap-2 pt-2">
+                                <div className="flex flex-row md:gap-2 pt-2 pl-2">
                                     <div className="flex items-center"><img src="copyright.png"></img></div>
                                     <div className="copyrightContent">2023 Prahars </div>
                                 </div>

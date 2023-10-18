@@ -61,7 +61,7 @@ export default function Navbar(){
               <div className={`bar ${isOpen ? 'open' : ''}`}></div>
             </div>
 
-            <div className='contactButton'>Contact Us</div>
+            <div className='contactButton' onClick={() => scrollToSection("About Us")}>Contact Us</div>
         {/* </div> */}
        </nav>
        {/* <div className="hamburger-icon " onClick={handleToggle}>

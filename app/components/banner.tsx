@@ -21,7 +21,7 @@ export default function Banner(){
                     Relevant digital lead 
                     generation made<br />
                     <p className="Simple"></p>
-                    <div className="subtitle">
+                    <div className="subtitle_mobile">
                         <p>forging your <span className="banner-text-highlight">winning</span> digital presence</p>
                     </div>
                 </div>

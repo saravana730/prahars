@@ -61,12 +61,12 @@ export default function Testimonials(): React.JSX.Element{
         }
 
     ]
-    const [slidesToShow, setSlidesToShow] = useState(3);
+    const [slidesToShow, setSlidesToShow] = useState(1);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      if (window.innerWidth <= 768) {
-        setSlidesToShow(1);
+      if (window.innerWidth >= 768) {
+        setSlidesToShow(3);
       }
     }
   }, []);
@@ -122,9 +122,9 @@ export default function Testimonials(): React.JSX.Element{
             <div className="desktopTestimonials">
                 <div className={`scroll-animationPortfolio ${isVisible ? '' : ''}`}>
                 <div className='flex flex-col pt-4 pb-4 pl-10'>
-                    <div className='testimonialTitle1 font-extrabold'><span className='testimonialTitle2'>Clients love us</span>, but</div>
-                    <div className='testimonialTitle1 font-extrabold'>don’t take our word</div>
-                    <div className='testimonialTitle1 font-extrabold'>for it.</div>
+                    <div className='testimonialTitle1 '><span className='testimonialTitle2 '>Clients love us</span>, but</div>
+                    <div className='testimonialTitle1 '>don’t take our word</div>
+                    <div className='testimonialTitle1 '>for it.</div>
                 </div>
                 <div className='testimonialsContent '>
                     <div className=' flex flex-row md:gap-4 pt-6 pl-10'>
@@ -168,12 +168,12 @@ export default function Testimonials(): React.JSX.Element{
             </div>
 
             <div className="mobileTestimonials">
-                <div className="testimonial_top_padding">
+                <div className="testimonial_top_padding"> 
                     <div className={`scroll-animationPortfolio ${isVisible ? '' : ''}`}>
-                    <div className='flex flex-col pt-4 pb-4 pl-10'>
-                        <div className='testimonialTitle1 font-extrabold'><span className='testimonialTitle2'>Clients love us</span>, but</div>
-                        <div className='testimonialTitle1 font-extrabold'>don’t take our word</div>
-                        <div className='testimonialTitle1 font-extrabold'>for it.</div>
+                    <div className='flex flex-col pt-4 pb-4'>
+                        <div className='testimonialTitle1_mobile '><span className='testimonialTitle2_mobile'>Clients love us</span>, but</div>
+                        <div className='testimonialTitle1_mobile '>don’t take our word</div>
+                        <div className='testimonialTitle1_mobile '>for it.</div>
                     </div>
                     <div className='testimonialsContent '>
                         <div className=' flex flex-row md:gap-4 pt-6 pl-10'>

@@ -191,7 +191,7 @@
 .bannercontents{
     color: var(--tertiary-color);
     font-weight: bold;
-    font-size: 6rem;
+    font-size: var(--homescreen-font-desktop);
     line-height: 1;
     font-family: "WorkSans","SansSerif";
 }
@@ -199,7 +199,7 @@
     content: 'simple';
     color: var(--primary-color);
     font-weight: bold;
-    font-size: 6rem;
+    font-size: var(--homescreen-font-desktop);
     padding-top:1%;
     font-family: "WorkSans","SansSerif";
     animation-name: replacement;
@@ -261,7 +261,7 @@
 }
 
 .services_page {
-    padding-top: 15rem;
+    padding-top: 12rem;
     padding-right: 2.1rem;
     padding-left: 2.1rem;
 }
@@ -290,7 +290,7 @@
 }
 
 .branding_padding {
-    padding-top: 45px;
+    padding-top: 125px;
 }
 
 .for_us_padding {
@@ -337,7 +337,9 @@
 }
 
 .design_deploy {
-    padding-left: 11%;
+    padding-top: 50px;
+    /* padding-left: 11%; */
+    padding-bottom: 100px;
 }
 
 
@@ -354,6 +356,7 @@
     /* width: 100%; */
 }
 .desktopCase{
+    padding-top: 100px;
     display:flex;
 }
 .mobileCase{
@@ -380,13 +383,15 @@
 .case-card {
     padding-left: 10%;
     padding-right: 10%;
+    aspect-ratio: 1;
+    background-repeat: no-repeat;
     width: 100%;
-    height: 400px;
+    /* height: 400px; */
     background-color: #faead3;
     border-radius: 30px;
 }
 .card1{
-    background-image: url('/case studies/tabImage.png');    
+    background-image: url('/case studies/tabImage.png'); 
 }
 .card2{
     background-image: url('/case studies/computer.png');
@@ -531,7 +536,7 @@ display:flex;
     /* overflow-x: hidden; */
 }
 .desktopTestimonials {
-    /* display: flex;  */
+    display: contents; 
 }
 .mobileTestimonials {
     display: none;
@@ -761,6 +766,7 @@ display:flex;
     color:var(--white-color);
 }
 .footerContainerContent3{
+    text-align: center;
     font-size:16px;
     color:var(--white-color);
 }
@@ -817,6 +823,7 @@ display:flex;
 }
 .desktopBlog{
     display: flex;
+    justify-content: space-around;
 }
 .mobileBlog{
     display: none;
@@ -876,7 +883,7 @@ display:flex;
 }
 
 .blog_title {
-    line-height: 2.5;
+    line-height: 1.5;
     font-family: "WorkSans","SansSerif";
     font-size: 2rem;
     font-weight: 600;
@@ -892,6 +899,9 @@ display:flex;
 }
 
 .blog_desc_innerpage {
+    font-family: "WorkSans","SansSerif";
+    font-size: 1.3rem;
+    font-weight: 600;
     line-height: 1.5;
     padding-top: 25px;
 }
@@ -977,8 +987,8 @@ display:flex;
     display: flex;
     color: var(--secondary-color);
     font-size: 3rem;
-    font-weight: 700;
-    font-family: var(--primary-font);
+    font-weight: 600;
+    font-family: var(--secondary-font);
     padding-top: 25px;
 }
 .inner_page_img {
@@ -997,11 +1007,11 @@ display:flex;
     padding-left: 10%;
     padding-right: 10%;
 }
-.blog_desc_innerpage {
+/* .blog_desc_innerpage {
     color: var(--tertiary-color);
     font-family: var(--primary-font);
     font-weight: 600;
-}
+} */
 .desktopBlogInnerPage{
     display: contents;
 }
