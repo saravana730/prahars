@@ -8,6 +8,9 @@ import dynamic from 'next/dynamic'
 import BlogCreateRequestI from '@/types/blogCreateRequest';
 import React, { useState } from 'react';
 import { IResponse } from '@/types/response';
+import { EditorState, ContentState, convertFromHTML, convertToRaw } from 'draft-js';
+
+
 
 
 const Editor = dynamic<EditorProps>(
@@ -37,18 +40,29 @@ export const BlogCreateForm = () => {
         category: "TECH"
     }
     let data;
-    const saveBlog = async (requst: BlogCreateRequestI) => {
-        let url = `http://localhost:3001/api/blog/create`
-        const res = await fetch(url, {
-            method: "POST",
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(requst)
-        });
-        data = await res.json() as IResponse;
-        console.log(data);
-        if (data.status !== 200, 201) {
-            alert("INVALID");
-        }
+
+    const contentState = ContentState.createFromText("test");
+
+    // Initialize the editor state with the default content
+    const [editorState, setEditorState] = useState(
+        EditorState.createWithContent(contentState)
+    );
+
+    const handleEditorStateChange = (editorState: any) => {
+        setEditorState(editorState);
+    };
+    const saveBlog = (requst: BlogCreateRequestI) => {
+        // let url = `http://localhost:3001/api/blog/create`
+        // const res = await fetch(url, {
+        //     method: "POST",
+        //     headers: { 'Content-Type': 'application/json' },
+        //     body: JSON.stringify(requst)
+        // });
+        // data = await res.json() as IResponse;
+        // console.log(data);
+        // if (data.status !== 200, 201) {
+        //     alert("INVALID");
+        // }
     };
     const handleTitleChange = (event: any) => {
         setTitle(event.target.value);
@@ -165,6 +179,8 @@ export const BlogCreateForm = () => {
                             Content <span className='text-red-600'>*</span>
                         </label>
                         <Editor
+                            editorState={editorState}
+                            onEditorStateChange={handleEditorStateChange}
                             wrapperClassName="wrapper"
                             editorClassName="editor"
                             toolbarClassName="toolbar"

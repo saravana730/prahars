@@ -11,11 +11,13 @@ import 'styles/styles.css'
 import './globals.css'
 import 'styles/constants.css'
 
+
 const Page = () => {
     return (
 
         <>
             <div className='LandingPage'>
+               
                 <Navbar />
                 <Banner />
                 <div><CaseStudies /></div>
