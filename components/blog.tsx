@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
-import '../styles/styles.css';
-import 'app/styles/mobile.css';
+import 'styles/styles.css';
+import 'styles/mobile.css';
 import Image from 'next/image';
 import forward_arrow from "/public/blog/icons8-forward-100.png";
 import { useEffect, useState } from 'react';
@@ -10,7 +10,7 @@ import { useEffect, useState } from 'react';
 // import sheet from '/blog/news.png';
 // import profile from '/blog/owner.png';
 
-export default function Blogs1() {
+export default function Blogs() {
     const [isVisible, setIsVisible] = useState(false);
     //   const [isLogo, setLogoVisible] = useState(false)
 
