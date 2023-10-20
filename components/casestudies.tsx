@@ -1,6 +1,7 @@
 'use client';
 import 'styles/styles.css';
 import { useEffect, useState } from 'react';
+import Link from 'next/link';
 
 export default function CaseStudies() {
     const [isVisible, setIsVisible] = useState(false);
@@ -41,21 +42,21 @@ export default function CaseStudies() {
                             </div>
                             <div className={`cardTitle1 ${isVisible ? 'card1Animation' : ''}`}>G-GADGETS</div>
                             <div className={`cardContent1 ${isVisible ? 'card1Animation' : ''}`}>Traffic increased by 29.16%</div>
-                            {/* <div className={`caseBox ${isVisible ? 'card1Animation':''}`}> View Case Study <div className='arrow right'></div></div> */}
+                            <div className={`caseBox ${isVisible ? 'card1Animation':''}`}> View Case Study <div className='arrow right'></div></div>
 
                         </div>
                         <div className={`flex flex-col md:gap-6 pt-20 card-container ${isVisible ? 'card2Animation' : ''}`}>
                             <div className="card2 justify-center case-card"></div>
                             <div className="cardTitle1">SMV BUSINESS SOLUTIONS</div>
                             <div className="cardContent1">6 Sign-ups in a Month</div>
-                            {/* <div className='caseBox'> View Case Study <div className='arrow right'></div></div> */}
+                            <div className='caseBox'> View Case Study <div className='arrow right'></div></div>
                         </div>
                         <div className={` flex flex-col md:gap-6 pt-2 card-container ${isVisible ? 'card3Animation' : ''}`}>
 
                             <div className="card3 justify-center case-card"></div>
                             <div className="cardTitle1">SHORTFLIX</div>
                             <div className="cardContent1">Avg cost per download - 14 per Download</div>
-                            {/* <div className='caseBox'> View Case Study <div className='arrow right'></div></div> */}
+                            <div className='caseBox'> View Case Study <div className='arrow right'></div></div>
                         </div>
 
                     </div>
@@ -74,7 +75,7 @@ export default function CaseStudies() {
                     </div>
                 </div> */}
                     <div className='flex items-center justify-center pt-6'>
-                        <div className='caseButton '>See All Work</div>
+                        <div className='caseButton '><Link href="/casestudiesPage">See All Work</Link></div>
                     </div>
                 </div>
             </div>
@@ -97,7 +98,7 @@ export default function CaseStudies() {
                             <div className="cardTitle1 pt-4">G-GADGETS</div>
                             <div className="cardContent1 pt-4">Traffic increased by 29.16%</div>
                             <div className="md: pt-4">
-                                {/* <div className='caseBox'> View Case Study <div className='arrow right'></div></div>  */}
+                                <div className='caseBox'> View Case Study <div className='arrow right'></div></div> 
                             </div>
                         </div>
                         <div className='flex flex-col md:gap-6 pt-20 card-container-mobile'>
@@ -105,7 +106,7 @@ export default function CaseStudies() {
                             <div className="cardTitle1 pt-4">SMV BUSINESS SOLUTIONS</div>
                             <div className="cardContent1 pt-4">6 Sign-ups in a Month</div>
                             <div className="md: pt-4">
-                                {/* <div className='caseBox'> View Case Study <div className='arrow right'></div></div>  */}
+                                <div className='caseBox'> View Case Study <div className='arrow right'></div></div> 
                             </div>
                         </div>
                         <div className='flex flex-col md:gap-6 pt-20 card-container-mobile'>
@@ -113,7 +114,7 @@ export default function CaseStudies() {
                             <div className="cardTitle1 pt-4">SHORTFLIX</div>
                             <div className="cardContent1 pt-4">Avg cost per download - 14 per Download</div>
                             <div className="md: pt-4">
-                                {/* <div className='caseBox'> View Case Study <div className='arrow right'></div></div>  */}
+                                <div className='caseBox'> View Case Study <div className='arrow right'></div></div> 
                             </div>
                         </div>
                         {/* </div> */}
@@ -132,7 +133,7 @@ export default function CaseStudies() {
                     </div>
                 </div> */}
                         <div className='flex items-center justify-center pt-20'>
-                            <div className='caseButton '>See All Work</div>
+                            <div className='caseButton '><Link href="/casestudiesPage">See All Work</Link></div>
                         </div>
                     </div>
                 </div>

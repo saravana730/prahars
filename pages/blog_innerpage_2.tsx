@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import '../app/styles/styles.css'
+import '/styles/styles.css'
 import Image from 'next/image';
 
 export default function BlogsInnerPage() {
@@ -51,10 +51,10 @@ export default function BlogsInnerPage() {
                         Not only does social media provide companies great increase in their marketing efficiency, but it is also a tool that provides free publicity thanks to social sharing mechanics.                    
                     </div>
                     <div className="blog_desc_innerpage">
-                        In today's world, marketing experts are on the constant lookout for new ways to get their brands before consumers in the most memorable way possible. Social media is an essential part of most marketers' campaign strategies these days. The popularity that social media enjoys today- whether it be Facebook, Twitter, or Instagram- can largely be attributed to these benefits:
+                        In todays world, marketing experts are on the constant lookout for new ways to get their brands before consumers in the most memorable way possible. Social media is an essential part of most marketers campaign strategies these days. The popularity that social media enjoys today- whether it be Facebook, Twitter, or Instagram- can largely be attributed to these benefits:
                     </div>
                     <div className="blog_desc_innerpage">
-                        * Strengthens online presence as well as offline interactions – With so many business executives driven by data and analytics, a boosted online presence also has a corresponding positive impact on the company's offline exposure making special occasions or important announcements that much more special.
+                        * Strengthens online presence as well as offline interactions – With so many business executives driven by data and analytics, a boosted online presence also has a corresponding positive impact on the companys offline exposure making special occasions or important announcements that much more special.
                     </div>
                     <div className="blog_desc_innerpage">
                         * Gives instant audience feedback: Social media allows marketers novel access to what their audience views as entertaining and likable which might not have been achievable before in conventional marketing techniques like TV commercials.
@@ -108,10 +108,10 @@ export default function BlogsInnerPage() {
                         Not only does social media provide companies great increase in their marketing efficiency, but it is also a tool that provides free publicity thanks to social sharing mechanics.                    
                     </div>
                     <div className="blog_desc_innerpage">
-                        In today's world, marketing experts are on the constant lookout for new ways to get their brands before consumers in the most memorable way possible. Social media is an essential part of most marketers' campaign strategies these days. The popularity that social media enjoys today- whether it be Facebook, Twitter, or Instagram- can largely be attributed to these benefits:
+                        In todays world, marketing experts are on the constant lookout for new ways to get their brands before consumers in the most memorable way possible. Social media is an essential part of most marketers campaign strategies these days. The popularity that social media enjoys today- whether it be Facebook, Twitter, or Instagram- can largely be attributed to these benefits:
                     </div>
                     <div className="blog_desc_innerpage">
-                        * Strengthens online presence as well as offline interactions – With so many business executives driven by data and analytics, a boosted online presence also has a corresponding positive impact on the company's offline exposure making special occasions or important announcements that much more special.
+                        * Strengthens online presence as well as offline interactions – With so many business executives driven by data and analytics, a boosted online presence also has a corresponding positive impact on the companys offline exposure making special occasions or important announcements that much more special.
                     </div>
                     <div className="blog_desc_innerpage">
                         * Gives instant audience feedback: Social media allows marketers novel access to what their audience views as entertaining and likable which might not have been achievable before in conventional marketing techniques like TV commercials.

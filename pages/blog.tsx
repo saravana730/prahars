@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
-import '../app/styles/styles.css'
-import 'app/styles/mobile.css';
+// import '../app/styles/styles.css'
+// import 'app/styles/mobile.css';
 import Image from 'next/image';
 import forward_arrow from "/public/blog/icons8-forward-100.png";
 import Navbar from '@/components/navbar';
@@ -31,6 +31,22 @@ export default function PageBlogs() {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+    const blogs = [
+        {
+            id: 1,
+            title: "Paid Marketing Vs Affiliate Marketing",
+            description: "Paid marketing and affiliate marketing are two of the most popular ways to promote products and services online.",
+            img: '/blog/thumbnail (3).png'
+
+        },
+        {
+            id: 2,
+            title: "Social Media Marketing - A Guide",
+            description: "Social media marketing is one of the most efficient and effective ways to connect with customers and promote your brand.",
+            img: '/blog/thumbnail (4).png'
+        }
+    ];
     return (
         <div className={`scroll-animationPortfolio ${isVisible ? '' : ''}`}>
             <div className="desktopBlog">
@@ -46,11 +62,11 @@ export default function PageBlogs() {
                                             <div className="col">
                                                 <div className="bg_image_1"></div>
                                                 <div className="blog_title">Paid Marketing Vs Affiliate Marketing</div>
-                                                <div className="blog_desc">Paid marketing and affiliate marketing are two of the<br /> most popular ways to promote products and services<br /> online.</div>
+                                                <div className="blog_desc">Paid marketing and affiliate marketing are two of the most popular ways to promote products and services online.</div>
                                                 {/* <button className="outlined-button_blog"> */}
                                                 <div className="read_more_justify">
                                                     <div>
-                                                        <a className=" read_more_row" href="/blog_innerpage_1">Read More</a>
+                                                        <Link className=" read_more_row" href="/blog_innerpage_1">Read More</Link>
                                                     </div>
                                                     <div className="read_more_arrow"><Image src={forward_arrow} alt='>' width={20} height={20} /></div>
                                                 </div>
@@ -60,13 +76,13 @@ export default function PageBlogs() {
                                                 <div className="col">
                                                     <div className="bg_image_2"></div>
                                                     <div className="blog_title">Social Media Marketing - A Guide</div>
-                                                    <div className="blog_desc">Social media marketing is one of the most efficient and<br />
-                                                        effective ways to connect with customers and promote<br />
+                                                    <div className="blog_desc">Social media marketing is one of the most efficient and
+                                                        effective ways to connect with customers and promote
                                                         your brand.
                                                     </div>
                                                     <div className="read_more_justify">
                                                         <div>
-                                                            <a className="read_more_row" href="/blog_innerpage_2">Read More</a>
+                                                            <Link className="read_more_row" href="/blog_innerpage_2">Read More</Link>
                                                         </div>
                                                         <div className="read_more_arrow"><Image src={forward_arrow} alt='>' width={20} height={20} /></div>
                                                         {/* <a href='/blog_innerpage'></a> */}
@@ -74,8 +90,8 @@ export default function PageBlogs() {
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
+                                    </div> 
+                                {/* </div>
                             </div>
                         </div>
                     </div>
@@ -97,7 +113,7 @@ export default function PageBlogs() {
                                     {/* <button className="outlined-button_blog"> */}
                                     <div className="read_more_justify">
                                         <div>
-                                            <a className="read_more_row" href="/blog_innerpage_1">Read More</a>
+                                            <Link className="read_more_row" href="/blog_innerpage_1">Read More</Link>
                                         </div>
                                         <div className="read_more_arrow"><Image src={forward_arrow} alt='>' width={20} height={20} /></div>
                                         {/* <a href='/blog_innerpage'></a> */}
@@ -114,7 +130,7 @@ export default function PageBlogs() {
                                     </div>
                                     <div className="read_more_justify">
                                         <div>
-                                            <a className="read_more_row" href="/blog_innerpage_2">Read More</a>
+                                            <Link className="read_more_row" href="/blog_innerpage_2">Read More</Link>
                                         </div>
                                         <div className="read_more_arrow"><Image src={forward_arrow} alt='>' width={20} height={20} /></div>
                                         {/* <a href='/blog_innerpage'></a> */}
@@ -127,6 +143,7 @@ export default function PageBlogs() {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     )
 }
