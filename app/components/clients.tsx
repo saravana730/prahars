@@ -5,14 +5,19 @@ import { useEffect, useState } from 'react';
 
 
 export default function Clients() {
-    const [isVisible1, setIsVisible1] = useState(false);
+    const [isVisible, setIsVisible1] = useState(false);
+    const [isClientVisible,setIsClient]=useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
             const scrollTop = window.scrollY;
-            const triggerPoint = window.innerHeight * 0.8;
-            const scrollValue = 1200;
-            setIsVisible1(scrollValue > triggerPoint);
+            const triggerPoints= window.innerHeight * 1.7;
+            const triggerPoint = 1120;
+            if(scrollTop > triggerPoint){
+                setIsClient(true)
+            }else{
+                setIsClient(false)
+            }
             console.log(scrollTop)
             console.log(triggerPoint)
         };
@@ -76,9 +81,12 @@ export default function Clients() {
     ]
     return (
         <div >
-            <div className="desktopClients">
+            <div className="desktopClients ">
+                <div className={`${isClientVisible ? 'opacity-1':'opacity-0'}`}>
+                <div className={`scroll-animationClient ${isClientVisible ? ' ':''}`}>
                 <div className='flex items-center justify-center'>
                     <div className="clientsTitle1">Our Happy <span className="clientsTitle2">Customers</span></div>
+                </div>
                 </div>
                 <div className="clients_page">
                     <div className="flex flex-col gap-5">
@@ -102,14 +110,12 @@ export default function Clients() {
                         </div>
                     </div>
                 </div>
+                </div>
             </div>
-
             <div className="mobileClients">
                 <div className="clients_page_padding_mobile">
                     <div className="flex flex-col ">
-                        <div className="justify-center">
-                            <div className="clientsTitle1_mobile whitespace-nowrap">Our Happy <span className="clientsTitle2_mobile">Customers</span></div>
-                        </div>
+                            <div className="clientsTitle1_mobile mx-auto">Our Happy <span className="clientsTitle2_mobile">Customers</span></div>
                         <div className="clients_list_padding">
                             <div className="flex flex-wrap flex-row gap-2 justify-between">
                                 <div className="border_ice_courier_mobile client-item-mobile"></div>

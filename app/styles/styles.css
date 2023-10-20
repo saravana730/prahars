@@ -57,7 +57,8 @@
   }
   
 .itemsList{
-    display:flex;flex-direction: row;
+    display:flex;
+    flex-direction: row;
 }
 
 .navbar{
@@ -94,7 +95,7 @@
     padding:0.25rem 1rem;
     border-radius: 40px;;
     font-size: var(--font-contact);
-    font-weight: 800;
+    font-weight: 300;
     transition:0.6s;
     height:fit-content;
 }
@@ -173,6 +174,20 @@
 }
 
 /* --------------------------------------  Banner  --------------------------- */
+.bannerAnimation{
+    animation: slideBannerUp 1s forwards;
+    transform:translateX(0px);
+}
+@keyframes slideBannerUp{
+   0%{
+    
+    transform:translatex(200px);
+   }
+   100%{
+    
+    transform:translateX(0px);
+   }
+}
 
 
 .mobileBanner{
@@ -203,12 +218,12 @@
     padding-top:1%;
     font-family: "WorkSans","SansSerif";
     animation-name: replacement;
-	animation-duration: 5s;
+	animation-duration: 2.75s;
   	animation-timing-function: ease-out;
   	animation-iteration-count: infinite;
     animation-direction: absolute;
 }
-@keyframes replacement{
+/* @keyframes replacement{
     0%{
         opacity:1
     }
@@ -232,6 +247,35 @@
     }
 
 
+} */
+@keyframes replacement{
+    0%{
+        opacity:1
+    }
+    /* 25%{
+        opacity:0
+    } */
+    /* 35%{
+        opacity: 1;
+        content:'easy';
+    } */
+    50%{
+        /* opacity:0; */
+        opacity: 1;
+        content:'easy';
+    }
+    75%{
+        opacity:1;
+        content:'efficient';
+    }
+    /* 100%{ */
+        /* opacity:0; */
+        /* opacity:1;
+        content:'efficient'; */
+        
+    /* } */
+
+
 }
 .subtitle{
     display: flex;
@@ -247,6 +291,24 @@
     color: var(--primary-color);
 }
 /* -------------------------- Services ----------------------------- */
+.servicesAnimationBranding{
+    animation: slideUpServices 1s forwards;
+ }
+ .servicesAnimationadvertising{
+    animation: slideUpServices 1s forwards;
+    animation-delay: 0.2s;
+ }
+ @keyframes slideUpServices{
+    0%{
+        transform:translateY(150px)
+    }   
+    50%{
+        transform:translateY(0px)
+    }
+    /* 100%{
+        transform:translateY(0);
+    } */
+ }
 
 .desktopServices{
     display: flex;
@@ -261,7 +323,8 @@
 }
 
 .services_page {
-    padding-top: 12rem;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
     padding-right: 2.1rem;
     padding-left: 2.1rem;
 }
@@ -344,6 +407,38 @@
 
 
 /* ------------------------- case studies ----------------*/
+.card3Animation{
+    opacity: 0;
+    /* transform: translateY(20px); */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease;
+    animation: slideInFromBottom 1.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+    animation-delay: 1s;
+  }
+  .card2Animation{
+    opacity: 0;
+    /* transform: translateY(20px); */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease;
+    animation: slideInFromBottom 1.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+    animation-delay: 0.75s;
+  }
+  .card1Animation{
+    opacity: 0;
+    /* transform: translateY(20px); */
+    /* transition: opacity 0.5s ease-in-out, transform 0.5s ease; */
+    animation-delay: 0.50s;
+    animation: slideInFromBottom 1.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+  }
+  @keyframes slideInFromBottom {
+    from {
+      transform: translateY(25%);
+    }
+  
+    to {
+        opacity:1;
+      transform: translateY(0);
+    }
+  }
+
 .card-container {
     width: 33%;
 }
@@ -363,6 +458,7 @@
     display:none;
 }
 .caseTitle1{
+    padding-bottom: 13%;
     font-size:3rem;
     font-weight: 600;
     color:var(--tertiary-color);
@@ -392,9 +488,11 @@
 }
 .card1{
     background-image: url('/case studies/tabImage.png'); 
+    background-size: cover;
 }
 .card2{
     background-image: url('/case studies/computer.png');
+    background-size: cover;
 }
 .card3{
     background-color: #515151;
@@ -681,12 +779,12 @@ display:flex;
 
 .border_insight_consulting{
     background-image: url('/clients/IMG_1917.PNG');
-    background-size: contain;
+    background-size: cover;
 }
 
 .border_kad_construction{
     background-image: url('/clients/IMG_1973.PNG');
-    background-size: contain;
+    background-size: cover;
 }
 
 .border_vd{
@@ -728,7 +826,7 @@ display:flex;
 }
 .border_suryamithran {
     background-image: url('/clients/IMG_2075.PNG');
-    background-size: contain;
+    background-size: cover;
 }
 
 
@@ -808,6 +906,51 @@ display:flex;
     font-family:var(--primary-font);
     color:var(--white-color);
 }
+.footerSet1{
+    opacity: 0;
+    /* transform: translateY(20px); */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease;
+    animation: slideInFromBottom 1.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+    animation-delay: 0.5s;
+  }
+  .footerSet2{
+    opacity: 0;
+    /* transform: translateY(20px); */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease;
+    animation: slideInFromBottom 1.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+    animation-delay: 0.5s;
+  }
+  .footerSet3{
+    opacity: 0;
+    /* transform: translateY(20px); */
+    /* transition: opacity 0.5s ease-in-out, transform 0.5s ease; */
+    animation-delay: 0.5s;
+    animation: slideInFromBottom 1.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+  }
+  .footerSet4{
+    opacity: 0;
+    /* transform: translateY(20px); */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease;
+    animation: slideInFromBottom 1.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+    animation-delay: 0.5s;
+  }
+  .footerSet5{
+    opacity: 0;
+    /* transform: translateY(20px); */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease;
+    animation: slideInFromBottom 1.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+    animation-delay: 0.5s;
+  }
+  @keyframes slideInFromBottom {
+    from {
+      transform: translateY(25%);
+    }
+  
+    to {
+        opacity:1;
+      transform: translateY(0);
+    }
+  }
 
 
 /* ------------------------- Blogs ------------------------ */
@@ -883,6 +1026,7 @@ display:flex;
 }
 
 .blog_title {
+    padding-top: 3%;
     line-height: 1.5;
     font-family: "WorkSans","SansSerif";
     font-size: 2rem;
@@ -891,6 +1035,7 @@ display:flex;
 }
 
 .blog_desc {
+    padding-top: 3%;
     line-height: 1.5;
     font-family: "WorkSans","SansSerif";
     font-size: 1.3rem;
@@ -900,8 +1045,9 @@ display:flex;
 
 .blog_desc_innerpage {
     font-family: "WorkSans","SansSerif";
-    font-size: 1.3rem;
-    font-weight: 600;
+    font-size: 1.5rem;
+    /* font-weight: 600; */
+    font-weight: 500;
     line-height: 1.5;
     padding-top: 25px;
 }
@@ -988,8 +1134,17 @@ display:flex;
     color: var(--secondary-color);
     font-size: 3rem;
     font-weight: 600;
-    font-family: var(--secondary-font);
+    font-family: "WorkSans","SansSerif";
+    /* font-family: var(--secondary-font); */
     padding-top: 25px;
+    
+
+    /* padding-top: 3%;
+    line-height: 1.5;
+    font-family: "WorkSans","SansSerif";
+    font-size: 1.3rem;
+    font-weight: 600; */
+    /* color: #412433; */
 }
 .inner_page_img {
     display: flex;
@@ -1056,9 +1211,22 @@ display:flex;
     opacity: 0;
     /* transform: translateY(20px); */
     transition: opacity 0.5s ease-in-out, transform 0.5s ease;
-    animation: slideInFromBottom 3s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+    animation: slideInFromBottom 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
   }
-
+  .scroll-animationTestimonials{
+    opacity: 0;
+    animation-delay: 1s;
+    /* transform: translateY(20px); */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease;
+    animation: slideInFromBottom 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+  }
+  .scroll-animationClient{
+    opacity: 0;
+    animation-delay: 2s;
+    /* transform: translateY(20px); */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease;
+    animation: slideInFromBottom 1s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
+  }
   @keyframes slideInFromBottom {
     from {
       transform: translateY(25%);
@@ -1069,6 +1237,29 @@ display:flex;
       transform: translateY(0);
     }
   }
+
+  .testimonialsHeader{
+    animation: slideLeft 0.5s ;
+  }
+  @keyframes slideLeft{
+    0%{
+        transform: translateX(-300px);
+    }
+    100%{
+        transform:translateX(0px);
+    }
+  }
+  .footerHeader{
+    animation: slideLeft 0.5s;
+  }
+  @keyframes slideLeft{
+    0%{
+        transform: translateX(-300px);
+    }
+    100%{
+        transform:translateX(0px);
+    }
+}
   /* -------------------------- Clients ------------------------- */
 .scroll-clients {
     opacity: 0;

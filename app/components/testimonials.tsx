@@ -61,12 +61,12 @@ export default function Testimonials(): React.JSX.Element{
         }
 
     ]
-    const [slidesToShow, setSlidesToShow] = useState(1);
+    const [slidesToShow, setSlidesToShow] = useState(3);
 
   useEffect(() => {
     if (typeof window !== 'undefined') {
-      if (window.innerWidth >= 768) {
-        setSlidesToShow(3);
+      if (window.innerWidth <= 768) {
+        setSlidesToShow(1);
       }
     }
   }, []);
@@ -74,10 +74,16 @@ export default function Testimonials(): React.JSX.Element{
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      const triggerPoint = window.innerHeight * 0.5;
+      const triggerPoints = window.innerHeight * 0.5;
       const triggerPointLogo = window.innerHeight * 0.2;
       // Adjust this value as needed
-      setIsVisible(scrollTop > triggerPoint);
+      console.log(scrollTop)
+      const triggerPoint =2880
+      if(scrollTop > triggerPoint){
+        setIsVisible(true);
+      }else{
+        setIsVisible(false);
+      }
     //   setLogoVisible(scrollTop > triggerPointLogo);
     };
 
@@ -120,13 +126,13 @@ export default function Testimonials(): React.JSX.Element{
     return(
         <div className='testimonials '>
             <div className="desktopTestimonials">
-                <div className={`scroll-animationPortfolio ${isVisible ? '' : ''}`}>
-                <div className='flex flex-col pt-4 pb-4 pl-10'>
-                    <div className='testimonialTitle1 '><span className='testimonialTitle2 '>Clients love us</span>, but</div>
-                    <div className='testimonialTitle1 '>don’t take our word</div>
-                    <div className='testimonialTitle1 '>for it.</div>
+                
+                <div className={`flex flex-col pt-4 pb-4 pl-10 ${isVisible ?'testimonialsHeader':''}`}>
+                    <div className='testimonialTitle1 '>Clients<span className='testimonialTitle2 '> love us</span></div>
+                    {/* <div className='testimonialTitle1 '>don’t take our word</div>
+                    <div className='testimonialTitle1 '>for it.</div> */}
                 </div>
-                <div className='testimonialsContent '>
+                <div className={`testimonialsContent ${isVisible ? 'scroll-animationTestimonials':''} `}>
                     <div className=' flex flex-row md:gap-4 pt-6 pl-10'>
                         <div className="testimonialContent">Prahars Review</div>
                         <div className="testimonialContent">4.5</div>
@@ -164,16 +170,16 @@ export default function Testimonials(): React.JSX.Element{
                     </Slider>
                     </div>
                 </div>
-                </div>
+                
             </div>
 
             <div className="mobileTestimonials">
                 <div className="testimonial_top_padding"> 
                     <div className={`scroll-animationPortfolio ${isVisible ? '' : ''}`}>
                     <div className='flex flex-col pt-4 pb-4'>
-                        <div className='testimonialTitle1_mobile '><span className='testimonialTitle2_mobile'>Clients love us</span>, but</div>
-                        <div className='testimonialTitle1_mobile '>don’t take our word</div>
-                        <div className='testimonialTitle1_mobile '>for it.</div>
+                        <div className='testimonialTitle1_mobile '>Clients <span className='testimonialTitle2_mobile'>love us</span></div>
+                        {/* <div className='testimonialTitle1_mobile '>don’t take our word</div>
+                        <div className='testimonialTitle1_mobile '>for it.</div> */}
                     </div>
                     <div className='testimonialsContent '>
                         <div className=' flex flex-row md:gap-4 pt-6 pl-10'>

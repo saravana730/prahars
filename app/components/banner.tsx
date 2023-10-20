@@ -5,7 +5,7 @@ import '../styles/styles.css';
 export default function Banner(){
     return(
         <div id="Home">
-            <div className= "banner">
+            <div className= "banner scroll-animationTestimonials">
                 <div className="bannercontents">
                     Relevant digital lead <br />
                     generation made<br />
@@ -15,7 +15,7 @@ export default function Banner(){
                     </div>
                 </div>
             </div>
-            <div className= "mobileBanner">
+            <div className= "mobileBanner bannerAnimation">
                 <div className="banner_padding_mobile">
                 <div className="bannercontents">
                     Relevant digital lead 

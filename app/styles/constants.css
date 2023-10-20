@@ -26,11 +26,13 @@
     --secondary-font: 'WorkSans',sans-serif;
 
     /* Mobile Fonts */
+    --homescreen-font-mobile: 4rem;
     --primary-font-mobile: 2.4rem;
     --secondary-font-mobile: 1.8rem;
     --tertiary-font-mobile: 1rem;
     --servicesTitle-font-mobile: 2rem;
     --servicesContent-font-mobile: 1.6rem;
+    --footer-fonts-mobile: 1.25rem;
 
     /* Desktop Fonts*/
     --homescreen-font-desktop: 6rem;

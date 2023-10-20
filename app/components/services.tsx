@@ -13,12 +13,16 @@ export default function Services(){
     const [isVisible, setIsVisible] = useState(false);
     useEffect(() => {
         const handleScroll = () => {
-          const scrollTop = window.scrollY;
-          const triggerPoint = window.innerHeight * 0.4;
-          const triggerPointLogo = window.innerHeight * 0.2;
-          // Adjust this value as needed
-          setIsVisible(scrollTop > triggerPoint);
-        //   setLogoVisible(scrollTop > triggerPointLogo);
+            const scrollTop = window.scrollY;
+            const triggerPoint = 1950;
+            
+            if(scrollTop > triggerPoint){
+                setIsVisible(true)
+            }else{
+                setIsVisible(false)
+            }
+            console.log(scrollTop)
+            console.log(triggerPoint)
         };
     
         window.addEventListener('scroll', handleScroll);
@@ -27,21 +31,21 @@ export default function Services(){
         };
       }, []);
     return(
-        <div  className={`scroll-services ${isVisible ? '' : ''}`} id="Services">
+        <div  className={` ${isVisible ? '' : 'opacity-0'}`} id="Services">
             
                 <div className="services_page">
                 <div className="flex flex-col">
+                <div className="for_us">Our <span className="caseTitle2">Services</span></div>
                     <div className="flex flex-row justify-between">
                         <div>
                             <div className="flex flex-col   ">
-                                <div className="our_services">OUR SERVICES</div>
+                                {/* <div className="for_us">Our <span className="caseTitle2">Services</span></div> */}
                                 {/* <div className="empty_box"></div> */}
-                                <div className="for_us_padding">
+                                {/* <div className="for_us_padding">
                                     <div className="for_us">For us, this is</div>
                                     <div className="for_us">all in <span style={{color:"#df0070"}}>a day's</span></div>
                                     <div className="for_us"><span style={{color:"#df0070"}}>work.</span></div>
-                                </div>
-                                <div className="empty_box"></div>
+                                </div> */}
                                 {/* <div>
                                     <button className="outlined-button">
                                         <div className="flex flex-row md: gap-1">
@@ -52,7 +56,7 @@ export default function Services(){
                                 </div> */}
                             </div>
                         </div>
-                        <div className="branding_padding">
+                        <div className={`branding_padding ${isVisible ? 'servicesAnimationBranding ':''}`}>
                             <div className="flex flex-col">
                                 <div><Image src={sample_img_1} alt={"png"} width={50} height={50}/></div>
                                 <div className="branding_title">Branding</div>
@@ -91,31 +95,31 @@ export default function Services(){
                                     <div><span className="branding_content_plus">+</span></div>
                                     <div className="branding_content">Product Branding</div>
                                 </div>
-
-
-                                <div className="design_deploy">
-                                    <div><Image src={sample_img_3} alt={"png"} width={50} height={50}/></div>
-                                    <div className="branding_title">Design and Deployment</div>
-                                <div className="flex flex-row md: gap-4">
-                                    {/* <div>Hello</div> */}
-                                    <div><span className="branding_content_plus">+</span></div>                                <div className="branding_content">Bespoke Website Design</div>
-                                </div>
-                                <div className="flex flex-row md: gap-4">
-                                    {/* <div>Hello</div> */}
-                                    <div><span className="branding_content_plus">+</span></div>                                <div className="branding_content">CMS(WordPress) Based Website</div>
-                                </div>
-                                <div className="flex flex-row md: gap-4">
-                                    {/* <div>Hello</div> */}
-                                    <div><span className="branding_content_plus">+</span></div>
-                                    <div className="branding_content">E-Commerce Website(WooCommerce and Shopify)</div>
-                                </div>
-                                </div>
-
-                                  
-
                             </div>
                         </div>
-                        <div className="branding_padding">
+                        <div className={`branding_padding ${isVisible ? 'servicesAnimationBranding ':''}`}>
+                            <div className="flex flex-col">
+                                {/* <div className="design_deploy"> */}
+                                        <div><Image src={sample_img_3} alt={"png"} width={50} height={50}/></div>
+                                        <div className="branding_title">Design and Deployment</div>
+                                    <div className="flex flex-row md: gap-4">
+                                        {/* <div>Hello</div> */}
+                                        <div><span className="branding_content_plus">+</span></div>                                <div className="branding_content">Bespoke Website Design</div>
+                                    </div>
+                                    <div className="flex flex-row md: gap-4">
+                                        {/* <div>Hello</div> */}
+                                        <div><span className="branding_content_plus">+</span></div>                                <div className="branding_content">CMS(WordPress) Based Website</div>
+                                    </div>
+                                    <div className="flex flex-row md: gap-4">
+                                        {/* <div>Hello</div> */}
+                                        <div><span className="branding_content_plus">+</span></div>
+                                        <div className="branding_content">E-Commerce Website(WooCommerce and Shopify)</div>
+                                    </div>
+                                {/* </div> */}
+                            </div>
+                        </div>
+                        
+                        <div className={`branding_padding ${isVisible ? ' servicesAnimationadvertising':''}`}>
                             <div className="flex flex-col">
                                 <div>
                                     <Image src={sample_img_2} alt={"png"} width={50} height={50}/>
@@ -179,14 +183,14 @@ export default function Services(){
         <div className="mobileServices">
             <div className="services_top_padding">
                 <div className="flex flex-col">
-                    <div className="our_services_mobile">OUR SERVICES</div>
-                    <div className="for_us_padding">
+                    <div className="for_us_mobile">Our <span className="caseTitle2_mobile">Services</span></div>
+                    {/* <div className="for_us_padding">
                         <div className="for_us_mobile">For us, this is all in</div>
                         <div className="for_us_mobile"><span style={{color:"#df0070"}}>a day's work.</span></div>
-                    </div>
+                    </div> */}
                     <div className="branding_padding_mobile">
                         <div className="flex flex-row">
-                            <div className="branding_img_padding"><Image src={sample_img_1} alt={"png"} width={30} height={30}/></div>
+                            <div className="branding_img_padding"><Image src={sample_img_1} alt={"png"} width={40} height={40}/></div>
                             <div className="branding_title_mobile">Branding</div>
                         </div>
                     <div className="flex flex-row md: gap-4">
@@ -221,7 +225,7 @@ export default function Services(){
 
                     <div className="branding_padding_mobile">
                         <div className="flex flex-row">
-                            <div className="branding_img_padding"><Image src={sample_img_2} alt={"png"} width={30} height={30}/></div>
+                            <div className="branding_img_padding"><Image src={sample_img_2} alt={"png"} width={40} height={40}/></div>
                             <div className="branding_title_mobile">Advertising and Marketing</div>
                         </div>
                     <div className="flex flex-row md: gap-4">
@@ -256,7 +260,7 @@ export default function Services(){
 
                     <div className="branding_padding_mobile">
                         <div className="flex flex-row">
-                            <div className="branding_img_padding"><Image src={sample_img_3} alt={"png"} width={30} height={30}/></div>
+                            <div className="branding_img_padding"><Image src={sample_img_3} alt={"png"} width={40} height={40}/></div>
                             <div className="branding_title_mobile">Design and Deployment</div>
                         </div>
                     <div className="flex flex-row md: gap-4">

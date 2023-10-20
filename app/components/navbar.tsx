@@ -9,7 +9,7 @@ export default function Navbar(){
     const section = document.getElementById(sectionId);
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
-      
+      console.log(section)
     }
   };
 
@@ -29,7 +29,7 @@ export default function Navbar(){
     const handleToggle = (e: { stopPropagation: () => void; }) => {
       if (typeof window !== 'undefined') {
         if (window.innerWidth <= 768) {
-          e.stopPropagation();
+          // e.stopPropagation();
           setIsOpen(!isOpen);
         }
       }
@@ -47,11 +47,11 @@ export default function Navbar(){
           {/* <div className='menu'><img src="menuIcon.png"/></div> */}
             <div className={`navbarMenu ${isOpen ? 'open' : 'visibleHidden'}`}>
                 <ul className="itemsList md:gap-8 ">
-                    <li className="home" onClick={() => scrollToSection("Home")}>Home</li>
-                    <li className="about" onClick={() => scrollToSection("About Us")}>About Us</li>
-                    <li className="service" onClick={() => scrollToSection("Services")}>Services</li>
-                    <li className="caseStudies" onClick={() => scrollToSection("Casestudies")}>Case Studies</li>
-                    <li className="career" onClick={() => scrollToSection("About Us")}>Career</li>
+                    <li className="home" onClick={() => scrollToSection("Home")}><a onClick={handleToggle}>Home</a></li>
+                    {/* <li className="about" onClick={() => scrollToSection("footer")}><a onClick={handleToggle}>About Us</a></li> */}
+                    <li className="service" onClick={() => scrollToSection("Services")}><a onClick={handleToggle}>Services</a></li>
+                    <li className="caseStudies" onClick={() => scrollToSection("Casestudies")}><a onClick={handleToggle}>Case Studies</a></li>
+                    {/* <li className="career" onClick={() => scrollToSection("footer")}><a onClick={handleToggle}>Career</a></li> */}
                     <li className="blog"><a href="/blog">Blog</a></li>
                 </ul>
             </div>
@@ -61,7 +61,7 @@ export default function Navbar(){
               <div className={`bar ${isOpen ? 'open' : ''}`}></div>
             </div>
 
-            <div className='contactButton' onClick={() => scrollToSection("About Us")}>Contact Us</div>
+            <div className='contactButton' onClick={() => scrollToSection("footer")}>Contact Us</div>
         {/* </div> */}
        </nav>
        {/* <div className="hamburger-icon " onClick={handleToggle}>

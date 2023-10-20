@@ -9,7 +9,7 @@ export default function CaseStudies(){
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop = window.scrollY;
-      const triggerPoint = window.innerHeight * 0.4;
+      const triggerPoint = window.innerHeight * 0.1;
       const triggerPointLogo = window.innerHeight * 0.2;
       // Adjust this value as needed
       setIsVisible(scrollTop > triggerPoint);
@@ -23,35 +23,41 @@ export default function CaseStudies(){
   }, []);
 
     return(
-        <div className={`scroll-animationPortfolio ${isVisible ? '' : ''}`}  id="Casestudies">
+        <div   id="Casestudies">
             <div className='desktopCase'>
             <div className="flex caseStudiesPage flex-col pt-16 pb-16 w-full">
                 <div className="flex pl-8 pr-8 flex-row md:gap-12 w-full">
                     <div className="flex flex-col md:gap-6 cardContainer1 card-container">
                         <div className="flex flex-col ">
-                            <div className="caseTitle1">We Let <span className="caseTitle2">Our Work</span></div>
-                            <div className="caseTitle3">Speak for itself. </div>
+                            <div className={`scroll-animationPortfolio ${isVisible ? '' : ''}`}>
+                                <div className="caseTitle1">Our <span className="caseTitle2">Works</span></div>
+                                {/* <div className="caseTitle3">Speak for itself. </div> */}
+                            </div>
                         </div>
-                        <div className="card1 case-card">
-                            {/* <div><img src="case studies/tabImage.png" className='card1Image1'/></div>
-                            <div><img src="case studies/tabZoom.png" className='card1ImageZoom1'/></div> */}
-                        </div>
-                        <div className="cardTitle1">G-GADGETS</div>
-                        <div className="cardContent1">Traffic increased by 29.16%</div>
-                        <div className='caseBox'> View Case Study <div className='arrow right'></div></div>
+
+                            <div className= {`card1 justify-center case-card ${isVisible ? 'card1Animation':''}`}>
+                                {/* <div><img src="case studies/tabImage.png" className='card1Image1'/></div>
+                                <div><img src="case studies/tabZoom.png" className='card1ImageZoom1'/></div> */}
+                            </div>
+                            <div className= {`cardTitle1 ${isVisible ? 'card1Animation':''}`}>G-GADGETS</div>
+                            <div className={`cardContent1 ${isVisible ? 'card1Animation':''}`}>Traffic increased by 29.16%</div>
+                            {/* <div className={`caseBox ${isVisible ? 'card1Animation':''}`}> View Case Study <div className='arrow right'></div></div> */}
+                
                     </div>
-                    <div className='flex flex-col md:gap-6 pt-20 card-container'>
-                        <div className="card2 case-card"></div>
+                    <div className={`flex flex-col md:gap-6 pt-20 card-container ${isVisible ? 'card2Animation':''}`}>
+                        <div className="card2 justify-center case-card"></div>
                         <div className="cardTitle1">SMV BUSINESS SOLUTIONS</div>
                         <div className="cardContent1">6 Sign-ups in a Month</div>
-                        <div className='caseBox'> View Case Study <div className='arrow right'></div></div>
-                    </div>
-                    <div className='flex flex-col md:gap-6 pt-2 card-container'>
+                        {/* <div className='caseBox'> View Case Study <div className='arrow right'></div></div> */}
+                    </div>                      
+                    <div className={` flex flex-col md:gap-6 pt-2 card-container ${isVisible ? 'card3Animation':''}`}>
+                    
                         <div className="card3 justify-center case-card"></div>
                         <div className="cardTitle1">SHORTFLIX</div>
                         <div className="cardContent1">Avg cost per download - 14 per Download</div>
-                        <div className='caseBox'> View Case Study <div className='arrow right'></div></div>
+                        {/* <div className='caseBox'> View Case Study <div className='arrow right'></div></div> */}
                     </div>
+                
                 </div>
                 {/* <div className='flex flex-row items-center justify-center md:gap-16'>
                     <div className='flex flex-col md:gap-6 pt-20'>
@@ -74,13 +80,13 @@ export default function CaseStudies(){
             </div>
 
             <div className='mobileCase'>
-            <div className="flex justify-center items-center">
+            <div className="flex justify-center items-center ">
                 <div className="flex caseStudiesPage flex-col pt-16 pb-16 w-full">
                 {/* <div className="flex pl-8 pr-8 flex-row md:gap-12"> */}
                     <div className="flex flex-col md:gap-6 cardContainer1">
                         <div className="flex flex-col ">
-                            <div className="caseTitle1_mobile">We Let <span className="caseTitle2_mobile">Our Work</span></div>
-                            <div className="caseTitle3_mobile">Speak for itself. </div>
+                            <div className="caseTitle1_mobile">Our <span className="caseTitle2_mobile">Work</span></div>
+                            {/* <div className="caseTitle3_mobile">Speak for itself. </div> */}
                         </div>
                     </div>
                     <div className="flex flex-col md:gap-6 pt-20 card-container-mobile">
@@ -91,7 +97,7 @@ export default function CaseStudies(){
                         <div className="cardTitle1 pt-4">G-GADGETS</div>
                         <div className="cardContent1 pt-4">Traffic increased by 29.16%</div>
                         <div className="md: pt-4">
-                            <div className='caseBox'> View Case Study <div className='arrow right'></div></div> 
+                            {/* <div className='caseBox'> View Case Study <div className='arrow right'></div></div>  */}
                         </div>
                     </div>    
                     <div className='flex flex-col md:gap-6 pt-20 card-container-mobile'>
@@ -99,7 +105,7 @@ export default function CaseStudies(){
                         <div className="cardTitle1 pt-4">SMV BUSINESS SOLUTIONS</div>
                         <div className="cardContent1 pt-4">6 Sign-ups in a Month</div>
                         <div className="md: pt-4">
-                            <div className='caseBox'> View Case Study <div className='arrow right'></div></div> 
+                            {/* <div className='caseBox'> View Case Study <div className='arrow right'></div></div>  */}
                         </div>
                     </div>
                     <div className='flex flex-col md:gap-6 pt-20 card-container-mobile'>
@@ -107,7 +113,7 @@ export default function CaseStudies(){
                         <div className="cardTitle1 pt-4">SHORTFLIX</div>
                         <div className="cardContent1 pt-4">Avg cost per download - 14 per Download</div>
                         <div className="md: pt-4">
-                            <div className='caseBox'> View Case Study <div className='arrow right'></div></div> 
+                            {/* <div className='caseBox'> View Case Study <div className='arrow right'></div></div>  */}
                         </div>
                     </div>
                 {/* </div> */}
