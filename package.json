@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "cd out && node -e \"console.log(Date.now())\"  > ./.nojekyll && node -e \"console.log('www.veract.io')\"  > ./CNAME && npm run push-gh-pages",
+    "push-gh-pages": "cd out && git init -b gh-pages && git remote add origin git@github.com:Veract-io/veract-io.github.io.git & git add . && git commit -am \"deploy\" && git push origin gh-pages --force"
   },
   "dependencies": {
     "@types/react-draft-wysiwyg": "^1.13.6",
