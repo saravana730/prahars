@@ -1,8 +1,9 @@
+import { BlogCreateForm } from '@/components/blogCreateForm';
 import React from 'react'
 
 const Page = () => {
     return (
-        <div>pageNumber</div>
+        <BlogCreateForm></BlogCreateForm>
     )
 }
 export default Page;
