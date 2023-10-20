@@ -4,7 +4,7 @@
 import 'react-draft-wysiwyg/dist/react-draft-wysiwyg.css';
 import { EditorProps } from 'react-draft-wysiwyg'
 import dynamic from 'next/dynamic'
-import 'styles/texteditor.css'
+// import '../styles/texteditor.css'
 import BlogCreateRequestI from '@/types/blogCreateRequest';
 import React, { useState } from 'react';
 import { IResponse } from '@/types/response';

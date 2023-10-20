@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import '../app/styles/styles.css'
+import '/styles/styles.css'
 import Image from 'next/image';
 
 export default function BlogsInnerPage() {
@@ -18,13 +18,13 @@ export default function BlogsInnerPage() {
                 {/* <div className="relative">
                     <Image layout="responsive" width={700} height={200} alt="Alternate Image" src="/blog/thumbnail (3).png" />
                 </div> */}
-                <div className="image-container">
+                {/* <div className="image-container"> */}
                     <div className="image-container img"><Image src="/blog/thumbnail (3).png" alt="Description of the image" width={1000} height={667} /></div>
-                </div>
+                {/* </div> */}
                 <div className="innerpage_content_padding">
                 <div className="blog_desc">
                     <div className="blog_desc_innerpage">
-                        Paid marketing and affiliate marketing are two of the most popular ways to promote products and services online. Both have their benefits and drawbacks, so it's important to understand the disparity between the two before deciding which one is right for your business.
+                        Paid marketing and affiliate marketing are two of the most popular ways to promote products and services online. Both have their benefits and drawbacks, so its important to understand the disparity between the two before deciding which one is right for your business.
                     </div>
                     <div className="blog_desc_innerpage">
                         Paid marketing is a form of advertising in which businesses pay to have their products or services featured on websites or other online platforms. This type of marketing can be extremely effective, but it can also be very costly.
@@ -93,7 +93,7 @@ export default function BlogsInnerPage() {
                 <div className="innerpage_content_padding">
                 <div className="blog_desc">
                     <div className="blog_desc_innerpage">
-                        Paid marketing and affiliate marketing are two of the most popular ways to promote products and services online. Both have their benefits and drawbacks, so it's important to understand the disparity between the two before deciding which one is right for your business.
+                        Paid marketing and affiliate marketing are two of the most popular ways to promote products and services online. Both have their benefits and drawbacks, so its important to understand the disparity between the two before deciding which one is right for your business.
                     </div>
                     <div className="blog_desc_innerpage">
                         Paid marketing is a form of advertising in which businesses pay to have their products or services featured on websites or other online platforms. This type of marketing can be extremely effective, but it can also be very costly.

@@ -3,15 +3,12 @@ import React from 'react';
 import 'styles/styles.css';
 import 'styles/mobile.css';
 import Image from 'next/image';
-import forward_arrow from "/public/blog/icons8-forward-100.png";
 import { useEffect, useState } from 'react';
+import forward_arrow from "/public/blog/icons8-forward-100.png";
 import Link from 'next/link';
 
-// import calendar from '../blog/calendar.png';
-// import sheet from '/blog/news.png';
-// import profile from '/blog/owner.png';
 
-export default function Blogs() {
+export default function AllCaseStudies() {
     const [isVisible, setIsVisible] = useState(false);
     //   const [isLogo, setLogoVisible] = useState(false)
 
@@ -34,19 +31,42 @@ export default function Blogs() {
     const blogs = [
         {
             id: 1,
-            title: "Paid Marketing Vs Affiliate Marketing",
-            description: "Paid marketing and affiliate marketing are two of the most popular ways to promote products and services online.",
-            img: '/blog/thumbnail (3).png',
-            link: "/blog_innerpage_1",
+            title: "G-GADGETS",
+            description: "Traffic increased by 29.16%",
+            img: '/case studies/temp1.png',
+            link: "/casestudies_1",
 
         },
         {
             id: 2,
-            title: "Social Media Marketing - A Guide",
-            description: "Social media marketing is one of the most efficient and effective ways to connect with customers and promote your brand.",
+            title: "SMV BUSINESS SOLUTIONS",
+            description: "6 Sign-ups in a Month",
+            img: '/case studies/square-1.png',
+            link: "/casestudies_2",
+        },
+        {
+            id: 3,
+            title: "SHORTFLIX",
+            description: "Avg cost per download - 14 per Download",
+            img: '/case studies/Frame 13.png',
+            link: "/casestudies_3",
+
+        },
+        {
+            id: 4,
+            title: "DIALYSIS TRANSPORT",
+            description: "Average conversion of 24 %.",
+            img: '/case studies/thumbnail-1 (1).png',
+            link: "/casestudies_4",
+        },
+        {
+            id: 5,
+            title: "MUSIC TUBE",
+            description: "Increased the subscribers from 67k to 85k",
             img: '/blog/thumbnail (4).png',
-            link: "/blog_innerpage_2",
-        }
+            link: "/casestudies_5",
+
+        },        
     ];
 
     return (
@@ -90,24 +110,10 @@ export default function Blogs() {
                         Know why at <br />
                         <span style={{ color: "#df0070" }}>our blogs</span>
                         <div className="empty_box"></div>
+                        {/* <div className="flex flex-row justify-between"> */}
                         <div className="flex flex-col">
-                            {blogs.map((item)=>(
-                                <div key={item.id} className="name_blog_content">
-                                    <div className="flex flex-col ">
-                                        <div className="bg_image_1 "><img src={item.img}/></div>
-                                        <div className="blog_title">{item.title}</div>
-                                        <div className="blog_desc">{item.description}</div>
-                                        <div className="read_more_justify">
-                                        <div>
-                                            <Link className="read_more_row" href={item.link}>Read More</Link>
-                                        </div>
-                                        <div className="read_more_arrow"><Image src={forward_arrow} alt='>' width={20} height={20} /></div>
-                                    </div>
-                                    </div>
-                                    
-                                </div>
-                            ))}
-                            {/* <div className="flex flex-col">
+                            {/* <div className="flex flex-row"> */}
+                            <div className="flex flex-col">
                                 <div className="bg_image_1"></div>
                                 <div className="blog_title">Paid Marketing Vs Affiliate Marketing</div>
                                 <div className="blog_desc">Paid marketing and affiliate marketing are two of the<br />
@@ -119,8 +125,41 @@ export default function Blogs() {
                                             <Link className="read_more_row" href="/blog_innerpage_2">Read More</Link>
                                         </div>
                                         <div className="read_more_arrow"><Image src={forward_arrow} alt='>' width={20} height={20} /></div>
+                                        {/* <a href='/blog_innerpage'></a> */}
                                     </div>
-                            </div> */}
+                                {/* <button>
+                                                    <div className='flex items-center justify-end '>
+                                                        <div className="flex flex-row md:gap-2">
+                                                            <div className="blog_outlined_button">Read More</div>
+                                                            <div className="blog_img_padding"><Image src={forward_arrow} alt='>' width={20} height={20} /></div>
+                                                        </div>
+                                                    </div>
+                                                </button> */}
+                            </div>
+                            <div className="flex flex-col">
+                                <div className="bg_image_2"></div>
+                                {/* <div className="blog_title">Social Media Marketing - A Guide</div> */}
+                                <div className="blog_desc">Social media marketing is one of the most efficient and<br />
+                                    effective ways to connect with customers and promote<br />
+                                    your brand.
+                                </div>
+                                <div className="read_more_justify">
+                                        <div>
+                                            <Link className="read_more_row" href="/blog_innerpage_2">Read More</Link>
+                                        </div>
+                                        <div className="read_more_arrow"><Image src={forward_arrow} alt='>' width={20} height={20} /></div>
+                                        {/* <a href='/blog_innerpage'></a> */}
+                                    </div>
+                                {/* <div className="blog_empty_box"></div> */}
+                                {/* <button>
+                                                    <div className='flex items-center justify-end '>
+                                                        <div className="flex flex-row md:gap-2">
+                                                            <div className="blog_outlined_button">Read More</div>
+                                                            <div className="blog_img_padding"><Image src={forward_arrow} alt='>' width={20} height={20} /></div>
+                                                        </div>
+                                                    </div>
+                                                </button> */}
+                            </div>
                         </div>
                     </div>
                     {/* </div> */}
