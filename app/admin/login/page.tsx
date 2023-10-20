@@ -1,13 +1,25 @@
 
 "use client";
-import { login } from '@/services/authService';
+import { login, setToken, setUser } from '@/services/authService';
 
+import { useRouter } from 'next/navigation'
 
-export const Login = async () => {
+export const Page = async () => {
+    const router = useRouter()
+
     function callLogin() {
 
         login("saravanadev@gmail.com", "test").then((data) => {
             console.log(data);
+            if (data.data) {
+                let res = data.data as ResponseDataI;
+                if (res) {
+                    setUser(res.user);
+                    setToken(res.token);
+                    router.push("/admin/home")
+                }
+            }
+
         }
 
         ).catch(
@@ -65,4 +77,4 @@ export const Login = async () => {
     );
 }
 
-export default Login;
+export default Page;

@@ -1,24 +1,49 @@
+"use client"
+
 import { BlogCard } from '@/components/blogCard';
 import { BlogCreateForm } from '@/components/blogCreateForm';
 import { IResponse } from '@/types/response';
-import React from 'react'
+import React, { useEffect } from 'react'
 import Image from 'next/image'
+import { verifyLogin } from '@/services/authService';
+import { useRouter } from 'next/navigation'
 
-const Home = async () => {
+const Page = async () => {
+    const router = useRouter()
+
+    useEffect(() => {
+        let logged = verifyLogin();
+        if (!logged) {
+            router.push("/admin/login")
+        }
+    }, [])
+
+    let blogs: any[] = [];
+
+
+
     let reqBody = {
         pageNumber: 1,
         pageSize: 10
     };
     let url = `http://localhost:3001/api/blog/getall`
-    const res = await fetch(url, {
+    const res = fetch(url, {
         method: "POST",
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(reqBody),
         cache: 'no-cache'
-    });
-    let response = await res.json() as IResponse;
-    console.log(response);
-    let data = response.data ?? [];
+    }).then((data) => {
+        data.json().then(res => {
+            if (res) {
+                console.log(res);
+                blogs = res.data ?? [];
+            }
+        });
+
+    }
+
+    )
+
     return (
         <div className='w-full h-full '>
             <nav className="fixed top-0 z-50 w-full bg-white border-b border-gray-200 dark:bg-gray-800 dark:border-gray-700">
@@ -31,7 +56,6 @@ const Home = async () => {
                                     <path clipRule="evenodd" fillRule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h7.5a.75.75 0 010 1.5h-7.5a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z"></path>
                                 </svg>
                             </button>
-                            {/* <Image src="./logo.png" alt="Prahars Logo" /> */}
                             <img src="./logo.png" className="h-8 mr-3" alt="Prahars Logo" />
                             <span className="self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">Prahars</span>
 
@@ -111,7 +135,7 @@ const Home = async () => {
             </aside >
 
             <div className="p-4 sm:ml-64 m-11 ">
-                {/* <div className='heading p-7 m-7  bg-slate-500 flex flex-row justify-between border rounded-xl  text-blue-700  hover:text-blue-800  border-gray-900'>
+                <div className='heading p-7 m-7  bg-slate-500 flex flex-row justify-between border rounded-xl  text-blue-700  hover:text-blue-800  border-gray-900'>
 
                     <span className="text-white self-center text-xl font-semibold sm:text-2xl whitespace-nowrap dark:text-white">Blogs</span>
                     <button type="button" className=" py-2.5 px-5 mr-2 mb-2 text-sm font-medium text-gray-900  bg-white rounded-full border border-gray-200 hover:bg-gray-100 hover:text-blue-700 focus:z-10   dark:focus:ring-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700">
@@ -119,9 +143,9 @@ const Home = async () => {
                     </button>
 
 
-                </div> */}
+                </div>
                 <div className='flex  md:flex-row md:gap-10  gap-10 flex-col   justify-between flex-wrap '>
-                    {data.map((card: any) => (
+                    {blogs.map((card: any) => (
                         <BlogCard cardInfo={card}></BlogCard>
                     ))}
 
@@ -135,4 +159,4 @@ const Home = async () => {
     );
 }
 
-export default Home;
+export default Page;
